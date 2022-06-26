@@ -1,0 +1,13 @@
+{
+  "name": "kat-nap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass ./input.css ./style/style.css",
+    "watch": "sass --watch ./input.scss ./css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
