@@ -9,10 +9,6 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-section h2 {
-  font-family: "Trykker", serif;
-}
-
 li {
   list-style: none;
 }
@@ -83,6 +79,9 @@ button {
     left: 21px;
     width: 24.89px;
   }
+  section h2 {
+    font-family: "Trykker", serif;
+  }
   #hero {
     position: relative;
     margin-bottom: -1px;
@@ -102,6 +101,7 @@ button {
     mix-blend-mode: overlay;
   }
   #welcome-cta {
+    margin-bottom: 6rem;
     padding: 24px 0;
     font-family: "Noto Sans", sans-serif;
     color: #fff;
@@ -119,6 +119,103 @@ button {
   #welcome-cta p {
     margin-bottom: 8px;
     font-size: 0.625rem;
+  }
+  #features {
+    max-width: 300px;
+    margin: 0 auto 6rem;
+    text-align: center;
+  }
+  #features h2 {
+    margin-bottom: 3.2rem;
+  }
+  #features .feature-container {
+    overflow: hidden;
+    width: 60vw;
+    max-width: 300px;
+    margin: 0 auto 40px;
+    background-color: #4F517D;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  }
+  #features .feature-container:last-child {
+    margin-bottom: 0;
+  }
+  #features .feature-graphic-container {
+    position: relative;
+    height: 90px;
+  }
+  #features .feature-graphic-container .feature-rectangle {
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    background-color: white;
+  }
+  #features .feature-graphic-container .left-rectangle {
+    bottom: 0;
+    right: 82px;
+    transform: rotate(11.61deg);
+  }
+  #features .feature-graphic-container .right-rectangle {
+    bottom: 0;
+    left: 82px;
+    transform: rotate(-11.61deg);
+  }
+  #features .feature-graphic-container img {
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 120px;
+  }
+  #features .feature-text-container {
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 35px 25px 20px;
+    font-size: 0.75rem;
+    color: #fff;
+  }
+  #meet-cats {
+    max-width: 300px;
+    margin: 0 auto 6rem;
+    text-align: center;
+  }
+  #meet-cats h2 {
+    margin-bottom: 3.2rem;
+  }
+  #meet-cats .cat-info {
+    display: flex;
+    position: relative;
+    margin-left: 20%;
+    margin-bottom: 2.5rem;
+  }
+  #meet-cats .img-container {
+    width: 118px;
+    height: 118px;
+    position: relative;
+    z-index: 1;
+    border: 4px solid #fff;
+    border-radius: 100%;
+    -webkit-box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.3);
+  }
+  #meet-cats .img-container img {
+    width: 110px;
+  }
+  #meet-cats .name-container {
+    align-self: flex-end;
+    position: absolute;
+    left: 20%;
+    width: 140px;
+    padding: 10px 20px;
+    font-weight: 600;
+    text-align: right;
+    color: #fff;
+    background-color: #4F517D;
+    border-radius: 8px;
   }
 }
 
