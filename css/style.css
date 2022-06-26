@@ -1,3 +1,74 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+@media only screen and (min-width: 0) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 14px 20px;
+    color: #fff;
+    background-color: #4F517D;
+    border-bottom: 2px solid #fff;
+  }
+  header h1 {
+    font-size: 1rem;
+    font-family: "Berkshire Swash", cursive;
+  }
+  header #nav-menu {
+    display: flex;
+    align-items: center;
+  }
+  header #mobile-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.75rem;
+    background: #4F517D;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+  }
+  header #mobile-menu img {
+    position: absolute;
+    top: 14px;
+    right: 20px;
+  }
+  header #mobile-menu ul {
+    padding: 50px 60px 40px 30px;
+  }
+  header #mobile-menu ul li {
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+  header #mobile-menu ul li:last-child {
+    margin-bottom: 0;
+  }
+  header #desktop-menu {
+    display: none;
+  }
+  header .cat-logo {
+    position: absolute;
+    bottom: -7px;
+    left: 21px;
+    width: 24.89px;
+  }
+  section h2 {
+    font-family: "Trykker", serif;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
