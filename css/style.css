@@ -9,8 +9,24 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
+section h2 {
+  font-family: "Trykker", serif;
+}
+
 li {
   list-style: none;
+}
+
+button {
+  padding: 8px 14px;
+  font-size: 0.625rem;
+  color: #fff;
+  background-color: #C2095A;
+  border: none;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
 @media only screen and (min-width: 0) {
@@ -25,8 +41,9 @@ li {
     border-bottom: 2px solid #fff;
   }
   header h1 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-family: "Berkshire Swash", cursive;
+    text-shadow: -3px 2px 0px rgba(0, 0, 0, 0.25);
   }
   header #nav-menu {
     display: flex;
@@ -66,8 +83,42 @@ li {
     left: 21px;
     width: 24.89px;
   }
-  section h2 {
-    font-family: "Trykker", serif;
+  #hero {
+    position: relative;
+    margin-bottom: -1px;
+    background-color: #4F517D;
+  }
+  #hero img {
+    width: 100%;
+  }
+  #hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background-color: #4F517D;
+    opacity: 0.4;
+    mix-blend-mode: overlay;
+  }
+  #welcome-cta {
+    padding: 24px 0;
+    font-family: "Noto Sans", sans-serif;
+    color: #fff;
+    text-align: center;
+    background-color: #4F517D;
+  }
+  #welcome-cta h2 {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+  }
+  #welcome-cta h2 span {
+    font-family: "Berkshire Swash", cursive;
+    text-shadow: -3px 2px 0px rgba(0, 0, 0, 0.25);
+  }
+  #welcome-cta p {
+    margin-bottom: 8px;
+    font-size: 0.625rem;
   }
 }
 

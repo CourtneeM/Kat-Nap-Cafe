@@ -1,15 +1,16 @@
-// Logo
-// font-family: 'Berkshire Swash', cursive;
-
-// Headings
-// font-family: 'Trykker', serif;
-
-// Body Text
-// font-family: 'Noto Sans', sans-serif;
+$logo-font: 'Berkshire Swash', cursive;
+$heading-font: 'Trykker', serif;
+$body-font: 'Noto Sans', sans-serif;
 
 $primary: #4F517D;
 $secondary: #C2095A;
 $logo: #E086D3;
+$logo-shadow: -3px 2px 0px rgba(0,0,0,0.25);
+@mixin box-shadow-default() {
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.30);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.30);
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.30);
+}
 
 // ************
 //    RESETS
@@ -22,10 +23,24 @@ $logo: #E086D3;
 
 body {
   font-size: 16px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: $body-font;
+}
+
+section {
+  h2 { font-family: $heading-font; }
 }
 
 li { list-style: none; }
+
+button {
+  padding: 8px 14px;
+  font-size: 0.625rem;
+  color: #fff;
+  background-color: $secondary;
+  border: none;
+  border-radius: 20px;
+  @include box-shadow-default();
+}
 
 
 @media only screen and (min-width: 0) {
@@ -43,8 +58,9 @@ li { list-style: none; }
     border-bottom: 2px solid #fff;
     
     h1 {
-      font-size: 1rem;
-      font-family: 'Berkshire Swash', cursive;
+      font-size: 1.25rem;
+      font-family: $logo-font;
+      text-shadow: $logo-shadow;
     }
 
     #nav-menu {
@@ -95,8 +111,46 @@ li { list-style: none; }
   // **********
   //    MAIN
   // **********
-  section {
-    h2 { font-family: 'Trykker', serif; }
+  #hero {
+    position: relative;
+    margin-bottom: -1px;
+    background-color: $primary;
+
+    img {
+      width: 100%;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 99%;
+      background-color: $primary;
+      opacity: .4;
+      mix-blend-mode: overlay;
+    }
   }
 
+  #welcome-cta {
+    padding: 24px 0;
+    font-family: $body-font;
+    color: #fff;
+    text-align: center;
+    background-color: $primary;
+
+    h2 {
+      margin-bottom: 15px;
+      font-size: 1.25rem;
+      span {
+        font-family: $logo-font;
+        text-shadow: $logo-shadow;
+      }
+    }
+
+    p {
+      margin-bottom: 8px;
+      font-size: 0.625rem;
+    }
+  }
 }
