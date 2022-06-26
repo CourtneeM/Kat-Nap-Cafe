@@ -371,6 +371,10 @@ button {
       img {
         width: 100px;
         height: 100px;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.30);
+        -moz-box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.30);
+        box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.30);
       }
 
       p {
@@ -399,6 +403,48 @@ button {
 
       .prev-testimonial { left: -40px; }
       .next-testimonial { right: -40px; }
+    }
+  }
+
+  #reserve-now {
+    position: relative;
+    margin: 0 auto 6rem;
+    padding: 65px 0;
+    color: #fff;
+    background-image: url('../img/reserve/reserve-cat-bg.png');
+    background-size: cover;
+    background-color: #67B6FF;
+    background-blend-mode: multiply;
+
+    h2 {
+      margin-bottom: 3.8rem;
+      text-align: center;
+    }
+
+    .reservation-option {
+      position: relative;
+      z-index: 1;
+      width: 190px;
+      margin: 0 auto;
+
+      &:nth-child(2) {
+        margin-bottom: 75px;
+      }
+        
+      p:first-child {
+        margin-bottom: 24px;
+        font-weight: 600;
+      }
+
+      p:nth-child(2) {
+        margin-bottom: 36px;
+        font-size: 0.75rem;
+      }
+
+      button {
+        padding: 10px 24px;
+        font-size: 0.75rem;
+      }
     }
   }
 }

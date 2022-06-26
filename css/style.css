@@ -315,6 +315,10 @@ button {
   #testimonials .author-info img {
     width: 100px;
     height: 100px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.3);
   }
   #testimonials .author-info p {
     margin-bottom: 18px;
@@ -342,6 +346,41 @@ button {
   }
   #testimonials .testimonial .next-testimonial {
     right: -40px;
+  }
+  #reserve-now {
+    position: relative;
+    margin: 0 auto 6rem;
+    padding: 65px 0;
+    color: #fff;
+    background-image: url("../img/reserve/reserve-cat-bg.png");
+    background-size: cover;
+    background-color: #67B6FF;
+    background-blend-mode: multiply;
+  }
+  #reserve-now h2 {
+    margin-bottom: 3.8rem;
+    text-align: center;
+  }
+  #reserve-now .reservation-option {
+    position: relative;
+    z-index: 1;
+    width: 190px;
+    margin: 0 auto;
+  }
+  #reserve-now .reservation-option:nth-child(2) {
+    margin-bottom: 75px;
+  }
+  #reserve-now .reservation-option p:first-child {
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+  #reserve-now .reservation-option p:nth-child(2) {
+    margin-bottom: 36px;
+    font-size: 0.75rem;
+  }
+  #reserve-now .reservation-option button {
+    padding: 10px 24px;
+    font-size: 0.75rem;
   }
 }
 
