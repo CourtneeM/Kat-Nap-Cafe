@@ -45,6 +45,9 @@ button {
     display: flex;
     align-items: center;
   }
+  header #nav-menu img {
+    cursor: pointer;
+  }
   header #mobile-menu {
     display: none;
     position: absolute;
@@ -84,18 +87,18 @@ button {
   }
   #hero {
     position: relative;
-    margin-bottom: -1px;
     background-color: #4F517D;
   }
   #hero img {
     width: 100%;
+    display: block;
   }
   #hero .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 99%;
+    height: 100%;
     background-color: #4F517D;
     opacity: 0.4;
     mix-blend-mode: overlay;
@@ -149,21 +152,31 @@ button {
     position: relative;
     height: 90px;
   }
+  #features .feature-graphic-container::before {
+    content: "";
+    position: absolute;
+    bottom: -1vh;
+    right: 50%;
+    width: 40vw;
+    height: 130%;
+    background-color: #fff;
+    transform: rotateZ(11.61deg) translateX(11%);
+  }
+  #features .feature-graphic-container::after {
+    content: "";
+    position: absolute;
+    bottom: -1vh;
+    left: 50%;
+    width: 40vw;
+    height: 130%;
+    background-color: #fff;
+    transform: rotateZ(-11.61deg) translateX(-11%);
+  }
   #features .feature-graphic-container .feature-rectangle {
     position: absolute;
-    width: 100%;
+    width: 60vw;
     height: 120%;
     background-color: white;
-  }
-  #features .feature-graphic-container .left-rectangle {
-    bottom: 0;
-    right: 82px;
-    transform: rotate(11.61deg);
-  }
-  #features .feature-graphic-container .right-rectangle {
-    bottom: 0;
-    left: 82px;
-    transform: rotate(-11.61deg);
   }
   #features .feature-graphic-container img {
     position: absolute;
