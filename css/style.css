@@ -276,6 +276,35 @@ button {
     font-weight: 600;
     border-radius: 0 0 5px 5px;
   }
+  #gallery {
+    margin: 0 auto 6rem;
+    text-align: center;
+  }
+  #gallery h2 {
+    margin-bottom: 3.2rem;
+  }
+  #gallery .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #gallery .gallery-container img {
+    width: 50%;
+    max-width: 185px;
+    border-top: 2px solid #fff;
+  }
+  #gallery .gallery-container img:nth-last-child(-n+2) {
+    border-bottom: 2px solid #fff;
+  }
+  #gallery .gallery-container img:nth-child(odd) {
+    border-left: 2px solid #fff;
+  }
+  #gallery .gallery-container img:nth-child(even) {
+    border-right: 2px solid #fff;
+  }
+  #gallery .gallery-container img:nth-child(2n+1) {
+    border-right: 2px solid #fff;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

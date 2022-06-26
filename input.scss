@@ -325,4 +325,39 @@ button {
       }
     }
   }
+
+  #gallery {
+    margin: 0 auto 6rem;
+    text-align: center;
+
+    h2 { margin-bottom: 3.2rem; }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      img {
+        width: 50%;
+        max-width: 185px;
+        border-top: 2px solid #fff;
+
+        &:nth-last-child(-n+2) {
+          border-bottom: 2px solid #fff;
+        }
+
+        &:nth-child(odd) {
+          border-left: 2px solid #fff;
+        }
+        
+        &:nth-child(even) {
+          border-right: 2px solid #fff;
+        }
+        
+        &:nth-child(2n+1) {
+          border-right: 2px solid #fff;
+        }
+      }
+    }
+  }
 }
