@@ -360,4 +360,45 @@ button {
       }
     }
   }
+
+  #testimonials {
+    margin: 0 auto 6rem;
+    text-align: center;
+
+    h2 { margin-bottom: 3.2rem; }
+
+    .author-info {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+
+      p {
+        margin-bottom: 18px;
+      }
+    }
+
+    .testimonial {
+      position: relative;
+      margin: 0 auto;
+      width: 180px;
+      max-width: 250px;
+      font-size: 0.75rem;
+      font-style: italic;
+
+      .review-stars {
+        margin-bottom: 18px;
+
+        img { width: 16px; }
+      }
+
+      .testimonial-control {
+        position: absolute;
+        top: 0;
+      }
+
+      .prev-testimonial { left: -40px; }
+      .next-testimonial { right: -40px; }
+    }
+  }
 }
