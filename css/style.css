@@ -27,6 +27,7 @@ button {
 
 @media only screen and (min-width: 0) {
   header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,6 +76,30 @@ button {
   }
   header #desktop-menu {
     display: none;
+    font-size: 0.75rem;
+  }
+  header #desktop-menu ul {
+    display: flex;
+    margin-right: 15vw;
+  }
+  header #desktop-menu ul li {
+    margin-right: 30px;
+  }
+  header #desktop-menu ul li:last-child {
+    margin-right: 0;
+  }
+  header #desktop-menu .reserve-now-banner {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    z-index: 1;
+    width: 65px;
+    padding: 16px 0;
+    font-weight: bold;
+    text-align: center;
+    background-color: #C2095A;
+    border-radius: 0 0 5px 5px;
+    cursor: pointer;
   }
   header .cat-logo {
     position: absolute;
@@ -88,10 +113,14 @@ button {
   #hero {
     position: relative;
     background-color: #4F517D;
+    overflow: hidden;
   }
   #hero img {
-    width: 100%;
+    width: 130%;
+    min-height: 460px;
+    max-height: 1177px;
     display: block;
+    object-fit: cover;
   }
   #hero .overlay {
     position: absolute;
@@ -104,8 +133,8 @@ button {
     mix-blend-mode: overlay;
   }
   #welcome-cta {
-    margin-bottom: 6rem;
-    padding: 24px 0;
+    margin-bottom: 18vw;
+    padding: 5.2vw 0;
     font-family: "Noto Sans", sans-serif;
     color: #fff;
     text-align: center;
@@ -127,6 +156,7 @@ button {
     font-weight: 600;
   }
   #features {
+    max-width: 90%;
     margin: 0 auto 6rem;
     text-align: center;
   }
@@ -236,8 +266,10 @@ button {
     margin-bottom: 3.2rem;
   }
   #events .event-container {
+    position: relative;
     max-width: 250px;
     margin: 0 auto 40px;
+    padding: 20px 0;
     border-radius: 5px;
     -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
@@ -281,6 +313,9 @@ button {
     font-family: "Trykker", serif;
   }
   #events .event-container button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
     padding: 12px 0;
     font-size: 0.9rem;
@@ -509,6 +544,106 @@ button {
   }
   footer .company-info img {
     width: 25px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  header h1 {
+    margin-left: 4.8vw;
+  }
+  header #mobile-menu-icon {
+    display: none;
+  }
+  header #desktop-menu {
+    display: block;
+  }
+  header .cat-logo {
+    position: absolute;
+    bottom: -11px;
+    left: 10px;
+    width: 40px;
+  }
+  #welcome-cta {
+    margin-bottom: 15.8vw;
+  }
+  #welcome-cta h2 {
+    font-size: 1.75rem;
+  }
+  #welcome-cta p {
+    font-size: 0.75rem;
+  }
+  #welcome-cta button {
+    font-size: 0.9rem;
+    padding: 13px 15px;
+  }
+  #features {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 9.4rem;
+  }
+  #features h2 {
+    flex: 1 1 100%;
+    margin-bottom: 60px;
+    font-size: 1.75rem;
+  }
+  #features .feature-container {
+    overflow: hidden;
+    width: 30%;
+    margin-bottom: 0;
+  }
+  #meet-cats {
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 9.4rem;
+  }
+  #meet-cats h2 {
+    flex: 1 1 100%;
+    margin-bottom: 60px;
+    font-size: 1.75rem;
+  }
+  #meet-cats .cat-info {
+    display: flex;
+    justify-content: center;
+    flex-basis: 45%;
+    margin-left: 0;
+  }
+  #meet-cats .img-container {
+    width: 148px;
+    height: 148px;
+  }
+  #meet-cats .img-container img {
+    width: 140px;
+  }
+  #meet-cats .name-container {
+    left: 50%;
+  }
+  #events {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 9.4rem;
+  }
+  #events h2 {
+    flex: 1 1 100%;
+    margin-bottom: 60px;
+    font-size: 1.75rem;
+  }
+  #events .event-container {
+    max-width: 31.6666666667%;
+    margin: 0 auto;
+  }
+  #gallery {
+    margin-bottom: 9.4rem;
+  }
+  #gallery h2 {
+    margin-bottom: 60px;
+    font-size: 1.75rem;
+  }
+  #gallery .gallery-container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  #gallery .gallery-container img {
+    max-width: 22.5%;
   }
 }
 
