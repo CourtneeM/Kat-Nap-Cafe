@@ -127,7 +127,6 @@ button {
     font-weight: 600;
   }
   #features {
-    max-width: 300px;
     margin: 0 auto 6rem;
     text-align: center;
   }
@@ -137,7 +136,7 @@ button {
   #features .feature-container {
     overflow: hidden;
     width: 60vw;
-    max-width: 300px;
+    max-width: 225px;
     margin: 0 auto 40px;
     background-color: #4F517D;
     border-radius: 3px;
@@ -152,24 +151,20 @@ button {
     position: relative;
     height: 90px;
   }
-  #features .feature-graphic-container::before {
+  #features .feature-graphic-container::before, #features .feature-graphic-container::after {
     content: "";
     position: absolute;
     bottom: -1vh;
-    right: 50%;
     width: 40vw;
     height: 130%;
     background-color: #fff;
+  }
+  #features .feature-graphic-container::before {
+    right: 50%;
     transform: rotateZ(11.61deg) translateX(11%);
   }
   #features .feature-graphic-container::after {
-    content: "";
-    position: absolute;
-    bottom: -1vh;
     left: 50%;
-    width: 40vw;
-    height: 130%;
-    background-color: #fff;
     transform: rotateZ(-11.61deg) translateX(-11%);
   }
   #features .feature-graphic-container .feature-rectangle {
@@ -189,7 +184,7 @@ button {
   #features .feature-text-container {
     max-width: 250px;
     margin: 0 auto;
-    padding: 35px 25px 20px;
+    padding: 10vw 25px 5vw;
     font-size: 0.75rem;
     color: #fff;
   }
@@ -234,15 +229,15 @@ button {
     border-radius: 8px;
   }
   #events {
-    max-width: 300px;
-    margin: 0 auto 6rem;
+    margin: 0 40px 6rem;
     text-align: center;
   }
   #events h2 {
     margin-bottom: 3.2rem;
   }
   #events .event-container {
-    margin: 0 40px 40px;
+    max-width: 250px;
+    margin: 0 auto 40px;
     border-radius: 5px;
     -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
@@ -274,11 +269,11 @@ button {
     padding: 0 30px;
   }
   #events .event-container .event-description p:first-child {
-    margin-bottom: 12px;
+    margin-bottom: 3.5vw;
     font-size: 0.9rem;
   }
   #events .event-container .event-description p:nth-child(2) {
-    margin-bottom: 20px;
+    margin-bottom: 6vw;
     font-size: 0.75rem;
   }
   #events .event-container h3 {
@@ -322,7 +317,8 @@ button {
     border-right: 2px solid #fff;
   }
   #testimonials {
-    margin: 0 auto 6rem;
+    position: relative;
+    margin: 0 auto 8.5rem;
     text-align: center;
   }
   #testimonials h2 {
@@ -341,7 +337,7 @@ button {
   }
   #testimonials .testimonial {
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     width: 180px;
     max-width: 250px;
     font-size: 0.75rem;
@@ -365,17 +361,39 @@ button {
   #testimonials .testimonial .next-testimonial {
     right: -40px;
   }
+  #testimonials .testimonial-progress {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+  }
+  #testimonials .testimonial-progress div {
+    width: 9px;
+    height: 9px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+  }
+  #testimonials .testimonial-progress #active-testimonial {
+    background-color: #ccc;
+  }
   #reserve-now {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10vw;
     margin: 0 auto 6rem;
-    padding: 65px 0;
+    padding: 65px 8vw;
     color: #fff;
     background-image: url("../img/reserve/reserve-cat-bg.png");
+    background-position: center;
     background-size: cover;
     background-color: #67B6FF;
     background-blend-mode: multiply;
   }
   #reserve-now h2 {
+    flex: 1 1 100%;
     margin-bottom: 3.8rem;
     text-align: center;
   }
