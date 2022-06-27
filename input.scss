@@ -413,10 +413,20 @@ button {
 
   #testimonials {
     position: relative;
+    max-width: 90%;
     margin: 0 auto 8.5rem;
     text-align: center;
 
     h2 { margin-bottom: 3.2rem; }
+
+    .testimonial {
+      max-width: 250px;
+      margin: 0 auto;
+
+      &:nth-child(3), &:nth-child(4) {
+        display: none;
+      }
+    }
 
     .author-info {
       img {
@@ -433,11 +443,9 @@ button {
       }
     }
 
-    .testimonial {
+    .testimonial-review {
       position: relative;
       margin: 0 auto 40px;
-      width: 180px;
-      max-width: 250px;
       font-size: 0.75rem;
       font-style: italic;
       color: #595959;
@@ -447,15 +455,18 @@ button {
 
         img { width: 16px; }
       }
+    }
 
+    #testimonial-controls {
       .testimonial-control {
         position: absolute;
-        top: 0;
+        top: 60%;
+        transform: translateY(60%);
         cursor: pointer;
       }
 
-      .prev-testimonial { left: -40px; }
-      .next-testimonial { right: -40px; }
+      .prev-testimonial { left: 5%; }
+      .next-testimonial { right: 5%; }
     }
 
     .testimonial-progress {
@@ -748,7 +759,51 @@ button {
   }
 
   #testimonials {
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 9.4rem;
+
+    h2 {
+      flex: 1 1 100%;
+      margin-bottom: 60px;
+      font-size: 1.75rem;
+    }
+
+    .testimonial {
+      padding: 30px 27px 5px;
+      border-radius: 5px;
+      @include box-shadow-default();
+
+      &:nth-child(3) {
+        display: block;
+        margin-left: 30px;
+      }
+    }
+
+    .author-info {
+      img { margin-bottom: 10px; }
+      p { margin-bottom: 21px; }
+    }
+
+    #testimonial-controls {
+      .prev-testimonial { left: -20px; }
+      .next-testimonial { right: -20px; }
+    }
+
+    .testimonial-progress {
+      bottom: -50px;
+      width: 40px;
+
+      div {
+        width: 10px;
+        height: 10px;
+      }
+
+      div:nth-child(3) {
+        display: none;
+      }
+    }
   }
 
   #reserve-now {
