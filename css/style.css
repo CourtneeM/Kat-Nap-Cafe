@@ -505,6 +505,7 @@ button {
   }
   footer #newsletter form div label {
     display: block;
+    margin-bottom: 3px;
     font-size: 0.625rem;
     text-align: left;
   }
@@ -710,6 +711,47 @@ button {
     margin: 0 auto;
     padding: 10px 48px;
     font-size: 0.9rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  footer #newsletter {
+    width: 210px;
+    margin: 0;
+  }
+  footer #newsletter h3 {
+    font-size: 1rem;
+  }
+  footer #newsletter form {
+    margin-bottom: 0;
+  }
+  footer #newsletter form div label {
+    font-size: 0.9rem;
+  }
+  footer #newsletter form div input {
+    font-size: 0.9rem;
+  }
+  footer .links > ul > li {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    text-align: left;
+  }
+  footer .links > ul > li:last-child {
+    margin-bottom: 0;
+  }
+  footer .company-info p:first-child {
+    margin-bottom: 3px;
+  }
+  footer .company-info p:nth-child(n+2) {
+    text-align: left;
+  }
+  footer .company-info p:nth-child(3) {
+    margin-bottom: 25px;
+  }
+  footer .company-info img {
+    width: 50px;
   }
 }
 
