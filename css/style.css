@@ -303,6 +303,7 @@ button {
   #events .event-container .event-description p:first-child {
     margin-bottom: 3.5vw;
     font-size: 0.9rem;
+    font-weight: bold;
   }
   #events .event-container .event-description p:nth-child(2) {
     margin-bottom: 6vw;
@@ -565,7 +566,6 @@ button {
     display: block;
   }
   header .cat-logo {
-    position: absolute;
     bottom: -11px;
     left: 10px;
     width: 40px;
@@ -707,6 +707,7 @@ button {
     margin-bottom: 9.4rem;
     padding-top: 80px;
     padding-bottom: 100px;
+    gap: 0;
   }
   #reserve-now h2 {
     margin-bottom: 60px;
@@ -804,6 +805,254 @@ button {
   }
   footer .company-info img {
     width: 50px;
+  }
+}
+@media only screen and (min-width: 860px) {
+  header h1 {
+    margin-left: 6.8vw;
+    font-size: 1.9rem;
+  }
+  header #mobile-menu-icon {
+    display: none;
+  }
+  header #desktop-menu {
+    font-size: 1rem;
+  }
+  header #desktop-menu ul > li {
+    margin-right: 50px;
+  }
+  header #desktop-menu .reserve-now-banner {
+    right: 15px;
+    top: 0;
+    width: 85px;
+    padding: 20px 0;
+  }
+  header .cat-logo {
+    bottom: -16px;
+    left: 15px;
+    width: 60px;
+  }
+  #welcome-cta {
+    margin-bottom: 15.8vw;
+  }
+  #welcome-cta h2 {
+    margin-bottom: 1.25rem;
+    font-size: 2.6rem;
+  }
+  #welcome-cta p {
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+  }
+  #welcome-cta button {
+    font-size: 1rem;
+  }
+  #features {
+    max-width: 1000px;
+    margin-bottom: 12.5rem;
+  }
+  #features h2 {
+    font-size: 2rem;
+  }
+  #features .feature-container {
+    max-width: 250px;
+  }
+  #features .feature-graphic-container > img {
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+    width: 160px;
+  }
+  #features .feature-text-container {
+    font-size: 0.9rem;
+  }
+  #meet-cats {
+    max-width: 1000px;
+    margin-bottom: 12.5rem;
+  }
+  #meet-cats h2 {
+    font-size: 2rem;
+  }
+  #meet-cats .cat-info {
+    flex-basis: 45%;
+  }
+  #meet-cats .img-container {
+    width: 208px;
+    height: 208px;
+  }
+  #meet-cats .img-container img {
+    width: 200px;
+  }
+  #meet-cats .name-container {
+    width: 200px;
+    padding-right: 30px;
+    font-size: 1.5rem;
+  }
+  #events {
+    max-width: 1000px;
+    margin-bottom: 12.5rem;
+  }
+  #events h2 {
+    font-size: 2rem;
+  }
+  #events .event-container {
+    max-width: 31.6666666667%;
+    padding: 28px 50px;
+  }
+  #events .event-container .event-img {
+    width: 187px;
+    margin: 0 auto 25px;
+  }
+  #events .event-container .event-img img {
+    width: 187px;
+    height: 187px;
+  }
+  #events .event-container .event-img p {
+    width: 74px;
+    padding: 8px 0;
+    font-size: 0.9rem;
+  }
+  #events .event-container .event-description {
+    padding: 0 20px;
+  }
+  #events .event-container .event-description p:first-child {
+    margin-bottom: 14px;
+    font-size: 1rem;
+  }
+  #events .event-container .event-description p:nth-child(2) {
+    margin-bottom: 35px;
+    font-size: 0.9rem;
+  }
+  #gallery {
+    margin-bottom: 12.5rem;
+  }
+  #gallery h2 {
+    font-size: 2rem;
+  }
+  #gallery .gallery-container {
+    max-width: 1000px;
+  }
+  #testimonials {
+    margin-bottom: 12.5rem;
+    max-width: 1000px;
+  }
+  #testimonials h2 {
+    font-size: 2rem;
+  }
+  #testimonials .testimonial {
+    flex-basis: 33.3333333333%;
+    max-width: 290px;
+    padding: 30px 27px 5px;
+  }
+  #testimonials .testimonial:nth-child(3) {
+    margin: 0;
+  }
+  #testimonials .testimonial:nth-child(4) {
+    display: block;
+  }
+  #testimonials .author-info img {
+    margin-bottom: 13px;
+    width: 125px;
+    height: 125px;
+  }
+  #testimonials .author-info p {
+    margin-bottom: 21px;
+    font-size: 1.25rem;
+  }
+  #testimonials .testimonial-review {
+    font-size: 0.9rem;
+  }
+  #testimonials #testimonial-controls {
+    display: none;
+  }
+  #testimonials .testimonial-progress {
+    display: none;
+  }
+  #reserve-now {
+    margin-bottom: 12.5rem;
+    padding-top: 80px;
+    padding-bottom: 136px;
+  }
+  #reserve-now h2 {
+    font-size: 2rem;
+  }
+  #reserve-now .reservation-option {
+    width: 280px;
+    height: 280px;
+  }
+  #reserve-now .reservation-option:nth-child(2) p:first-child, #reserve-now .reservation-option:nth-child(3) p:first-child {
+    margin-bottom: 22px;
+    font-size: 1.5rem;
+  }
+  #reserve-now .reservation-option:nth-child(2) p:nth-child(2), #reserve-now .reservation-option:nth-child(3) p:nth-child(2) {
+    margin-bottom: 70px;
+    font-size: 1rem;
+  }
+  #reserve-now .reservation-option:nth-child(2) button, #reserve-now .reservation-option:nth-child(3) button {
+    font-size: 1rem;
+  }
+  #reserve-now .reservation-option p:nth-child(2) {
+    font-size: 0.9rem;
+  }
+  #contact-us {
+    margin-bottom: 12.5rem;
+    width: 423px;
+  }
+  #contact-us h2 {
+    font-size: 2rem;
+  }
+  #contact-us form div {
+    flex-basis: 35%;
+  }
+  #contact-us form div label, #contact-us form div input, #contact-us form div textarea {
+    font-size: 1rem;
+  }
+  #contact-us form div:nth-child(2n+1) {
+    margin-right: 63px;
+  }
+  #contact-us form div:nth-last-child(2) {
+    margin-right: 0;
+  }
+  #contact-us form button {
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px 48px;
+    font-size: 1rem;
+  }
+  footer {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  footer #newsletter {
+    width: 270px;
+    margin: 0;
+  }
+  footer #newsletter h3 {
+    font-size: 1.25rem;
+  }
+  footer #newsletter form div > label, footer #newsletter form input {
+    font-size: 1rem;
+  }
+  footer #newsletter form button {
+    font-size: 1rem;
+  }
+  footer .links > ul > li {
+    margin-bottom: 24px;
+    font-size: 1rem;
+  }
+  footer .company-info p:first-child {
+    margin-bottom: 8px;
+    font-size: 2.5rem;
+  }
+  footer .company-info p:nth-child(n+2) {
+    margin-bottom: 2px;
+    font-size: 1rem;
+    text-align: left;
+  }
+  footer .company-info p:nth-child(3) {
+    margin-bottom: 25px;
+  }
+  footer .company-info img {
+    width: 85px;
   }
 }
 
