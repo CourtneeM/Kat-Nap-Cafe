@@ -963,27 +963,48 @@ button {
     margin-bottom: 150px;
 
     h2 { font-size: clamp(2rem, 3vw, 2.25rem); }
-    .feature-container { max-width: 250px; }
+    .feature-container { max-width: 300px; }
 
-    .feature-graphic-container > img {
-      left: 50%;
-      bottom: -40px;
-      transform: translateX(-50%);
-      width: 160px;
+    .feature-graphic-container {
+      height: 110px;
+
+      img {
+        bottom: -35px;
+        width: 180px;
+      }
+    } 
+
+    .feature-text-container {
+      max-width: 100%;
+      padding: 8vw 40px 3vw;
+      font-size: clamp(0.9rem, 1.4vw, 1.2rem);
     }
-
-    .feature-text-container { font-size: clamp(0.9rem, 1.4vw, 1.2rem); }
   }
 }
 @media only screen and (min-width: 1440px) {
   #features {
+    max-width: 1200px;
     margin-bottom: 200px;
 
     h2 {
       margin-bottom: 100px;
       font-size: clamp(2.25rem, 2.4vw, 3.2rem);
     }
-    .feature-text-container { font-size: clamp(1.2rem, 1.2vw, 1.6rem); }
+
+    .feature-container { max-width: 350px; }
+
+    .feature-graphic-container {
+      height: 130px;
+      img {
+        bottom: -50px;
+        width: 220px;
+      }
+    } 
+
+    .feature-text-container {
+      padding: 6vw 60px 2vw;
+      font-size: clamp(1.2rem, 1.2vw, 1.6rem);
+    }
   }
 }
 
