@@ -39,10 +39,11 @@ button {
 }
 
 
+// ************
+//   HEADER
+// ************
 @media only screen and (min-width: 0) {
-  // ************
-  //   HEADER
-  // ************
+  
   header {
     position: relative;
     display: flex;
@@ -662,19 +663,264 @@ button {
       width: 40px;
     }
   }
+}
 
+@media only screen and (min-width: 860px) {
+  header {
+    h1 {
+      margin-left: 6.8vw;
+      font-size: 1.9rem;
+    }
+    #mobile-menu-icon { display: none; }
+    #desktop-menu {
+      font-size: clamp(0.9rem, 2vw, 1.25rem);
+
+      ul {
+        margin-right: clamp(150px, 14vw, 400px);
+        li { margin-right: 50px; }
+      }
+
+      .reserve-now-banner {
+        right: 2.5%;
+        top: 0;
+        width: 100px;
+        padding: 25px 0;
+      }
+    }
+
+    .cat-logo {
+      bottom: -16px;
+      left: 15px;
+      width: 60px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  header {
+    border-bottom: 4px solid #fff;
+    h1 {
+      margin-left: 6.8vw;
+      font-size: clamp(2rem, 2vw, 3rem);
+    }
+    #mobile-menu-icon { display: none; }
+    #desktop-menu {
+      font-size: clamp(1.25rem, 1.2vw, 1.8rem);
+
+      ul > li { margin-right: clamp(50px, 4vw, 90px); }
+
+      .reserve-now-banner {
+        right: 3%;
+        top: 0;
+        width: clamp(95px, 7vw, 160px);
+      }
+    }
+
+    .cat-logo {
+      bottom: -0.95vw;
+      left: 3vw;
+      width: clamp(60px, 4vw, 100px);
+    }
+  }
+}
+
+// **********
+//    HERO
+// **********
+@media only screen and (min-width: 0) {
+  section {
+    h2 { font-family: $heading-font; }
+  }
+
+  #hero {
+    position: relative;
+    background-color: $primary;
+    overflow: hidden;
+
+    img {
+      width: 130%;
+      min-height: 460px;
+      max-height: 1177px;
+      display: block;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $primary;
+      opacity: .4;
+      mix-blend-mode: overlay;
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #hero {
+    img {
+      width: 110%;
+      max-height: 1400px;
+      display: block;
+      object-fit: cover;
+    }
+  }
+}
+
+// *****************
+//    WELCOME CTA
+// *****************
+@media only screen and (min-width: 0) {
+  #welcome-cta {
+    margin-bottom: 18vw;
+    padding: 5.2vw 0;
+    font-family: $body-font;
+    color: #fff;
+    text-align: center;
+    background-color: $primary;
+
+    h2 {
+      margin-bottom: 15px;
+      font-size: clamp(1.25rem, 4vw, 1.75rem);
+      span {
+        font-family: $logo-font;
+        text-shadow: $logo-shadow;
+      }
+    }
+
+    p {
+      margin-bottom: 8px;
+      font-size: clamp(0.625rem, 2vw, 0.75rem);
+    }
+    
+    button {
+      font-size: clamp(0.625rem, 2vw, 0.75rem);
+      font-weight: 600;
+    }
+  }
+}
+@media only screen and (min-width: 640px) {
   #welcome-cta {
     margin-bottom: 15.8vw;
 
-    h2 { font-size: 1.75rem; }
-    p { font-size: 0.75rem; }
+    h2 { font-size: clamp(1.75rem, 4.6vw, 2.6rem); }
+    p { font-size: clamp(0.75rem, 2vw, 0.9rem); }
     
     button {
-      font-size: 0.9rem;
+      font-size: clamp(0.75rem, 2vw, 0.9rem);
       padding: 13px 15px;
     }
   }
+}
+@media only screen and (min-width: 860px) {
+  #welcome-cta {
+    margin-bottom: 15.8vw;
 
+    h2 {
+      margin-bottom: 1.25rem;
+      font-size: clamp(2.6rem, 4vw, 3rem);
+    }
+    p {
+      margin-bottom: 0.75rem;
+      font-size: clamp(0.9rem, 1.4vw, 1.2rem);
+    }
+    
+    button { font-size: clamp(0.9rem, 1.4vw, 1.2rem); }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #welcome-cta {
+    h2 {
+      font-size: clamp(3rem, 3vw, 4rem);
+    }
+
+    p {
+      font-size: clamp(1.2rem, 1.2vw, 1.6rem);
+    }
+    
+    button {
+      font-size: clamp(1.2rem, 1.2vw, 1.6rem);
+    }
+  }
+}
+
+// **************
+//    FEATURES
+// **************
+@media only screen and (min-width: 0) {
+  #features {
+    max-width: 90%;
+    margin: 0 auto 6rem;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 3.2rem;
+      font-size: clamp(1.5rem, 4.8vw, 1.75rem)
+    }
+
+    .feature-container {
+      overflow: hidden;
+      width: 60vw;
+      max-width: 225px;
+      margin: 0 auto 40px;
+      background-color: #4F517D;
+      border-radius: 3px;
+      @include box-shadow-default();
+
+      &:last-child { margin-bottom: 0; }
+    }
+
+    .feature-graphic-container {
+      position: relative;
+      height: 90px;
+
+      &::before, &::after {
+        content: "";
+        position: absolute;
+        bottom: -1vh;
+        width: 40vw;
+        height: 130%;
+        background-color: #fff;
+      }
+
+      &::before {
+        right: 50%;
+        transform: rotateZ(11.61deg) translateX(11%);
+      }
+
+      &::after {
+        left: 50%;
+        transform: rotateZ(-11.61deg) translateX(-11%);
+      }
+
+      .feature-rectangle {
+        position: absolute;
+        width: 60vw;
+        height: 120%;
+        background-color: white;
+      }
+
+      img {
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        transform: translateX(-50%);
+        z-index: 1;
+        width: 120px;
+      }
+    }
+
+    .feature-text-container {
+      max-width: 250px;
+      margin: 0 auto;
+      padding: 10vw 25px 5vw;
+      font-size: 0.75rem;
+      color: #fff;
+    }
+  }
+}
+@media only screen and (min-width: 640px) {
   #features {
     display: flex;
     flex-wrap: wrap;
@@ -684,7 +930,7 @@ button {
     h2 {
       flex: 1 1 100%;
       margin-bottom: 60px;
-      font-size: 1.75rem;
+      font-size: clamp(1.75rem, 3.8vw, 2rem);
     }
 
     .feature-container {
@@ -692,8 +938,89 @@ button {
       width: calc(90% / 3);
       margin-bottom: 0;
     }
-  }
 
+    .feature-text-container {
+      font-size: clamp(0.75rem, 2vw, 0.9rem);
+    }
+  }
+}
+@media only screen and (min-width: 860px) {
+  #features {
+    max-width: 1000px;
+    margin-bottom: 12.5rem;
+
+    h2 { font-size: clamp(2rem, 3vw, 2.25rem); }
+    .feature-container { max-width: 250px; }
+
+    .feature-graphic-container > img {
+      left: 50%;
+      bottom: -40px;
+      transform: translateX(-50%);
+      width: 160px;
+    }
+
+    .feature-text-container { font-size: clamp(0.9rem, 1.4vw, 1.2rem); }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #features {
+    h2 { font-size: clamp(2.25rem, 2.4vw, 3.2rem); }
+    .feature-text-container { font-size: clamp(1.2rem, 1.2vw, 1.6rem); }
+  }
+}
+
+// ***************
+//    MEET CATS
+// ***************
+@media only screen and (min-width: 0) {
+  #meet-cats {
+    max-width: 300px;
+    margin: 0 auto 6rem;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 3.2rem;
+      font-size: clamp(1.5rem, 4.8vw, 1.75rem);
+    }
+
+    .cat-info {
+      display: flex;
+      position: relative;
+      margin-left: 20%;
+      margin-bottom: 2.5rem;
+    }
+
+    .img-container {
+      width: 118px;
+      height: 118px;
+      position: relative;
+      z-index: 1;
+      border: 4px solid #fff;
+      border-radius: 100%;
+      -webkit-box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.30);
+      -moz-box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.30);
+      box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.30);
+      
+      img {
+        width: 110px;
+      }
+    }
+
+    .name-container {
+      align-self: flex-end;
+      position: absolute;
+      left: 20%;
+      width: 140px;
+      padding: 10px 20px;
+      font-weight: 600;
+      text-align: right;
+      color: #fff;
+      background-color: $primary;
+      border-radius: 8px;
+    }
+  }
+}
+@media only screen and (min-width: 640px) {
   #meet-cats {
     max-width: 90%;
     display: flex;
@@ -703,7 +1030,7 @@ button {
     h2 {
       flex: 1 1 100%;
       margin-bottom: 60px;
-      font-size: 1.75rem;
+      font-size: clamp(1.75rem, 3.8vw, 2rem);
     }
 
     .cat-info {
@@ -722,7 +1049,141 @@ button {
 
     .name-container { left: 50%; }
   }
+}
+@media only screen and (min-width: 860px) {
+  #meet-cats {
+    max-width: 1000px;
+    margin-bottom: 12.5rem;
 
+    h2 { font-size: clamp(2rem, 3vw, 2.25rem); }
+
+    .cat-info {
+      flex-basis: 45%;
+    }
+
+    .img-container {
+      width: 208px;
+      height: 208px;
+      
+      img { width: 200px; }
+    }
+
+    .name-container {
+      width: 200px;
+      padding-right: 30px;
+      font-size: 1.5rem;
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #meet-cats {
+    h2 { font-size: clamp(2.25rem, 2.4vw, 3.2rem); }
+
+    .img-container {
+      width: 262px;
+      height: 262px;
+      border: 6px solid #fff;
+      
+      img { width: 250px; }
+    }
+
+    .name-container {
+      width: 240px;
+      padding-right: 45px;
+      font-size: 1.75rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  #meet-cats {
+    .name-container {
+      width: 270px;
+      font-size: 2rem;
+    }
+  }
+}
+
+// ************
+//    EVENTS
+// ************
+@media only screen and (min-width: 0) {
+  #events {
+    margin: 0 40px 6rem;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 3.2rem;
+      font-size: clamp(1.5rem, 4.8vw, 1.75rem);
+    }
+
+    .event-container {
+      position: relative;
+      max-width: 250px;
+      margin: 0 auto 40px;
+      padding: 20px 0;
+      border-radius: 5px;
+      @include box-shadow-default();
+
+      h3 { font-size: clamp(1.125rem, 3.6vw, 1.4rem); }
+
+      .event-img {
+        position: relative;
+        width: 130px;
+        margin: 0 auto 18px;
+
+        img {
+          width: 130px;
+          height: 130px;
+        }
+
+        p {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 52px;
+          padding: 6px 0;
+          font-size: 0.625rem;
+          background: #fff;
+          border-radius: 16px;
+          @include box-shadow-default();
+        }
+      }
+      
+      .event-description {
+        padding: 0 30px;
+
+        p:first-child {
+          margin-bottom: 3.5vw;
+          font-size: clamp(0.9rem, 2.2vw, 1.2rem);
+          font-weight: bold;
+        }
+
+        p:nth-child(2) {
+          margin-bottom: 40px;
+          font-size: clamp(0.75rem, 2.2vw, 0.9rem);
+        }
+      }
+
+      h3 {
+        margin-bottom: 12px;
+        font-family: $heading-font;
+      }
+
+      button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 12px 0;
+        font-size: clamp(0.9rem, 1.4vw, 1.2rem);
+        font-weight: 600;
+        border-radius: 0 0 5px 5px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 640px) {
   #events {
     display: flex;
     flex-wrap: wrap;
@@ -732,7 +1193,7 @@ button {
     h2 {
       flex: 1 1 100%;
       margin-bottom: 60px;
-      font-size: 1.75rem;
+      font-size: clamp(1.75rem, 3.8vw, 2rem);
     }
 
     .event-container {
@@ -742,13 +1203,109 @@ button {
       .event-description { max-width: 250px; }
     }
   }
+}
+@media only screen and (min-width: 860px) {
+  #events {
+    max-width: 1000px;
+    margin-bottom: 12.5rem;
+    
+    h2 { font-size: clamp(2rem, 3vw, 2.25rem); }
 
+    .event-container {
+      max-width: calc(95% / 3);
+      padding: 28px 50px;
+
+      h3 { font-size: clamp(1.4rem, 3vw, 1.7rem); }
+
+      .event-img {
+        width: 187px;
+        margin: 0 auto 25px;
+
+        img {
+          width: 187px;
+          height: 187px;
+        }
+
+        p {
+          width: 74px;
+          padding: 8px 0;
+          font-size: 0.9rem;
+        }
+      }
+
+      .event-description {
+        padding: 0 20px;
+
+        p:first-child {
+          margin-bottom: 14px;
+          font-size: clamp(1.2rem, 1.3vw, 1.4rem);
+        }
+
+        p:nth-child(2) {
+          margin-bottom: 35px;
+          font-size: clamp(0.9rem, 1.4vw, 1.2rem);
+        }
+      }
+
+      button { font-size: clamp(1.2rem, 1.3vw, 1.4rem); }
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #events {
+    h2 { font-size: clamp(2.25rem, 2.4vw, 3.2rem); }
+  }
+}
+
+// *************
+//    GALLERY
+// *************
+@media only screen and (min-width: 0) {
+  #gallery {
+    margin: 0 auto 6rem;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 3.2rem;
+      font-size: clamp(1.5rem, 4.8vw, 1.75rem);
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      img {
+        width: 50%;
+        max-width: 185px;
+        border-top: 2px solid #fff;
+
+        &:nth-last-child(-n+2) {
+          border-bottom: 2px solid #fff;
+        }
+
+        &:nth-child(odd) {
+          border-left: 2px solid #fff;
+        }
+        
+        &:nth-child(even) {
+          border-right: 2px solid #fff;
+        }
+        
+        &:nth-child(2n+1) {
+          border-right: 2px solid #fff;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 640px) {
   #gallery {
     margin-bottom: 9.4rem;
     
     h2 {
       margin-bottom: 60px;
-      font-size: 1.75rem;
+      font-size: clamp(1.75rem, 3.8vw, 2rem);
     }
 
     .gallery-container {
@@ -758,7 +1315,116 @@ button {
       img { max-width: calc(90% / 4); }
     }
   }
+}
+@media only screen and (min-width: 860px) {
+  #gallery {
+    margin-bottom: 12.5rem;
+    h2 { font-size: clamp(2rem, 3vw, 2.25rem); }
 
+    .gallery-container { max-width: 1000px; }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #gallery {
+    h2 { font-size: clamp(2.25rem, 2.4vw, 3.2rem); }
+
+    .gallery-container { max-width: 1440px; }
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  #gallery {
+  }
+}
+
+// ******************
+//    TESTIMONIALS
+// ******************
+@media only screen and (min-width: 0) {
+  #testimonials {
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto 8.5rem;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 3.2rem;
+      font-size: clamp(1.5rem, 4.8vw, 1.75rem);
+    }
+
+    .testimonial {
+      max-width: 250px;
+      margin: 0 auto;
+
+      &:nth-child(3), &:nth-child(4) {
+        display: none;
+      }
+    }
+
+    .author-info {
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.30);
+        -moz-box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.30);
+        box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.30);
+      }
+
+      p {
+        margin-bottom: 18px;
+        font-size: clamp(1rem, 2.8vw, 1.25rem);
+      }
+    }
+
+    .testimonial-review {
+      position: relative;
+      margin: 0 auto 40px;
+      font-size: clamp(0.75rem, 2.2vw, 0.9rem);
+      font-style: italic;
+      color: #595959;
+
+      .review-stars {
+        margin-bottom: 18px;
+
+        img { width: 16px; }
+      }
+    }
+
+    #testimonial-controls {
+      .testimonial-control {
+        position: absolute;
+        top: 60%;
+        transform: translateY(60%);
+        cursor: pointer;
+      }
+
+      .prev-testimonial { left: 5%; }
+      .next-testimonial { right: 5%; }
+    }
+
+    .testimonial-progress {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-between;
+      width: 60px;
+
+      div {
+        width: 9px;
+        height: 9px;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+      }
+
+      #active-testimonial {
+        background-color: #ccc;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 640px) {
   #testimonials {
     display: flex;
     flex-wrap: wrap;
@@ -768,7 +1434,7 @@ button {
     h2 {
       flex: 1 1 100%;
       margin-bottom: 60px;
-      font-size: 1.75rem;
+      font-size: clamp(1.75rem, 3.8vw, 2rem);
     }
 
     .testimonial {
@@ -806,251 +1472,12 @@ button {
       }
     }
   }
-
-  #reserve-now {
-    margin-bottom: 9.4rem;
-    padding-top: 80px;
-    padding-bottom: 100px;
-    gap: 0;
-    
-    h2 {
-      margin-bottom: 60px;
-      font-size: 1.75rem;
-    }
-
-    .reservation-option {
-      height: 255px;
-
-      &:nth-child(2), &:nth-child(3) {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 0;
-  
-        button {
-          align-self: flex-start;
-          margin-top: auto;
-          font-size: 0.9rem;
-          padding: 10px 28px;
-        }
-      }
-
-      p:nth-child(2) { font-size: 0.9rem; }
-    }
-  }
-  
-  #contact-us {
-    margin-bottom: 9.4rem;
-    width: 393px;
-
-    h2 {
-      margin-bottom: 60px;
-      font-size: 1.75rem;
-    }
-
-    form {
-      display: flex;
-      flex-wrap: wrap;
-
-      div {
-        flex: 1 1 45%;
-
-        label { font-size: 0.9rem; }
-        input, textarea { font-size: 0.9rem; }
-        &:nth-child(2n+1) { margin-right: 20px; }
-
-        &:nth-last-child(2) {
-          flex: 1 1 100%;
-          margin-right: 0;
-          margin-bottom: 50px;
-        }
-      }
-
-      button {
-        width: 40%;
-        margin: 0 auto;
-        padding: 10px 48px;
-        font-size: 0.9rem;
-      }
-    }
-  }
-
-  footer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-
-    #newsletter {
-      width: 210px;
-      margin: 0;
-
-      h3 { font-size: 1rem; }
-
-      form {
-        margin-bottom: 0;
-
-        div {
-          label { font-size: 0.9rem; }
-          input { font-size: 0.9rem; }
-        }
-      }
-    }
-
-    .links > ul > li {
-      margin-bottom: 20px;
-      font-size: 0.9rem;
-      text-align: left;
-
-      &:last-child { margin-bottom: 0; }
-    }
-
-    .company-info {
-      p:first-child { margin-bottom: 3px; }
-      p:nth-child(n+2) { text-align: left; }
-      p:nth-child(3) { margin-bottom: 25px; }
-      img { width: 50px; }
-    }
-  }
 }
-
 @media only screen and (min-width: 860px) {
-  header {
-    h1 {
-      margin-left: 6.8vw;
-      font-size: 1.9rem;
-    }
-    #mobile-menu-icon { display: none; }
-    #desktop-menu {
-      font-size: clamp(0.9rem, 2vw, 1.25rem);
-
-      ul {
-        margin-right: clamp(150px, 14vw, 400px);
-        li { margin-right: 50px; }
-      }
-
-      .reserve-now-banner {
-        right: 15px;
-        top: 0;
-        width: 95px;
-        padding: 20px 0;
-      }
-    }
-
-    .cat-logo {
-      bottom: -16px;
-      left: 15px;
-      width: 60px;
-    }
-  }
-
-  #welcome-cta {
-    margin-bottom: 15.8vw;
-
-    h2 {
-      margin-bottom: 1.25rem;
-      font-size: 2.6rem;
-    }
-    p {
-      margin-bottom: 0.75rem;
-      font-size: 0.9rem;
-    }
-    
-    button { font-size: 1rem; }
-  }
-
-  #features {
-    max-width: 1000px;
-    margin-bottom: 12.5rem;
-
-    h2 { font-size: 2rem; }
-    .feature-container { max-width: 250px; }
-
-    .feature-graphic-container > img {
-      left: 50%;
-      bottom: -40px;
-      transform: translateX(-50%);
-      width: 160px;
-    }
-
-    .feature-text-container { font-size: 0.9rem; }
-  }
-
-  #meet-cats {
-    max-width: 1000px;
-    margin-bottom: 12.5rem;
-
-    h2 { font-size: 2rem; }
-
-    .cat-info {
-      flex-basis: 45%;
-    }
-
-    .img-container {
-      width: 208px;
-      height: 208px;
-      
-      img { width: 200px; }
-    }
-
-    .name-container {
-      width: 200px;
-      padding-right: 30px;
-      font-size: 1.5rem;
-    }
-  }
-
-  #events {
-    max-width: 1000px;
-    margin-bottom: 12.5rem;
-    
-    h2 { font-size: 2rem; }
-
-    .event-container {
-      max-width: calc(95% / 3);
-      padding: 28px 50px;
-
-      .event-img {
-        width: 187px;
-        margin: 0 auto 25px;
-
-        img {
-          width: 187px;
-          height: 187px;
-        }
-
-        p {
-          width: 74px;
-          padding: 8px 0;
-          font-size: 0.9rem;
-        }
-      }
-
-      .event-description {
-        padding: 0 20px;
-
-        p:first-child {
-          margin-bottom: 14px;
-          font-size: 1rem;
-        }
-
-        p:nth-child(2) {
-          margin-bottom: 35px;
-          font-size: 0.9rem;
-        }
-      }
-    }
-  }
-
-  #gallery {
-    margin-bottom: 12.5rem;
-    h2 { font-size: 2rem; }
-
-    .gallery-container { max-width: 1000px; }
-  }
-
   #testimonials {
     margin-bottom: 12.5rem;
     max-width: 1000px;
-    h2 { font-size: 2rem; }
+    h2 { font-size: clamp(2rem, 3vw, 2.25rem); }
 
     .testimonial {
       flex-basis: calc(100% / 3);
@@ -1072,58 +1499,245 @@ button {
 
       p {
         margin-bottom: 21px;
-        font-size: 1.25rem;
+        font-size: clamp(1.25rem, 1.8vw, 1.5rem);
       }
     }
 
-    .testimonial-review { font-size: 0.9rem; }
+    .testimonial-review { font-size: clamp(0.9rem, 1.8vw, 1.2rem); }
 
     #testimonial-controls { display: none; }
     .testimonial-progress { display: none; }
   }
+}
+@media only screen and (min-width: 1440px) {
+  #testimonials {
+    h2 { font-size: clamp(2.25rem, 2.4vw, 3.2rem); }
+    
+    .author-info {
+      p {
+        font-size: clamp(1.5rem, 1.2vw, 1.6rem);
+      }
+    }
+  }
+}
 
+// *****************
+//    RESERVE NOW
+// *****************
+@media only screen and (min-width: 0) {
+  #reserve-now {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8vw;
+    margin: 0 auto 6rem;
+    padding: 65px 8vw;
+    color: #fff;
+    background-image: url('../img/reserve/reserve-cat-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-color: #67B6FF;
+    background-blend-mode: multiply;
+
+    h2 {
+      flex: 1 1 100%;
+      margin-bottom: 3.8rem;
+      font-size: clamp(1.5rem, 4.8vw, 1.75rem);
+      text-align: center;
+    }
+
+    .reservation-option {
+      position: relative;
+      z-index: 1;
+      width: 230px;
+      margin: 0 auto;
+
+      &:nth-child(2) {
+        margin-bottom: 75px;
+      }
+        
+      p:first-child {
+        margin-bottom: 24px;
+        font-size: clamp(1rem, 3vw, 1.2rem);
+        font-weight: 600;
+      }
+
+      p:nth-child(2) {
+        margin-bottom: 36px;
+        font-size: clamp(0.75rem, 2.6vw, 0.9rem);
+      }
+
+      button {
+        padding: 10px 24px;
+        font-size: clamp(0.75rem, 2.6vw, 0.9rem);
+      }
+    }
+  }
+}
+@media only screen and (min-width: 640px) {
+  #reserve-now {
+    margin-bottom: 9.4rem;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    gap: 0;
+    
+    h2 {
+      margin-bottom: 60px;
+      font-size: clamp(1.75rem, 3.8vw, 2rem);
+    }
+
+    .reservation-option {
+      height: 255px;
+
+      &:nth-child(2), &:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+  
+        button {
+          align-self: flex-start;
+          margin-top: auto;
+          padding: 10px 28px;
+        }
+      }
+
+      p:nth-child(2) { font-size: clamp(0.9rem, 2.2vw, 1rem); }
+    }
+  }
+}
+@media only screen and (min-width: 860px) {
   #reserve-now {
     margin-bottom: 12.5rem;
     padding-top: 80px;
     padding-bottom: 136px;
     
-    h2 { font-size: 2rem; }
+    h2 { font-size: clamp(2rem, 3vw, 2.25rem); }
 
     .reservation-option {
       width: 280px;
       height: 280px;
 
       &:nth-child(2), &:nth-child(3) {
-        p:first-child {
-          margin-bottom: 22px;
-          font-size: 1.5rem;
+        p:first-child { margin-bottom: 22px; }
+        p:nth-child(2) { margin-bottom: 70px; }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #reserve-now {
+    max-width: 1440px;
+
+    h2 { font-size: clamp(2.25rem, 2.4vw, 3.2rem); }
+
+    .reservation-option {
+      width: 350px;
+      height: 100%;
+
+      p:first-child {
+        width: 80%;
+        font-size: clamp(1.2rem, 1.3vw, 2rem);
+      }
+      p:nth-child(2) { font-size: clamp(1.2rem, 1.2vw, 1.6rem); }
+
+      button {
+        font-size: clamp(1.2rem, 1.2vw, 1.6rem);
+      }
+    }
+  }
+}
+
+// ****************
+//    CONTACT US
+// ****************
+@media only screen and (min-width: 0) {
+  #contact-us {
+    margin: 0 auto 6rem;
+    width: 170px;
+    
+    h2 {
+      margin-bottom: 3.2rem;
+      font-size: clamp(1.5rem, 4.8vw, 1.75rem);
+      text-align: center;
+    }
+
+    form {
+      div {
+        margin-bottom: 15px;
+
+        label {
+          display: block;
+          margin-bottom: 3px;
+          font-size: clamp(0.75rem, 2.2vw, 0.9rem);
         }
 
-        p:nth-child(2) {
-          margin-bottom: 70px;
-          font-size: 1rem;
+        input, textarea {
+          width: 100%;
+          padding: 5px;
+          font-size: clamp(0.75rem, 2.2vw, 0.9rem);
+          background-color: #F5F5F5;
+          border: none;
         }
-  
-        button { font-size: 1rem; }
+
+        &:nth-last-child(2) {
+          margin-bottom: 27px;
+        }
       }
 
-      p:nth-child(2) {
+      button {
+        width: 100%;
+        font-size: clamp(0.75rem, 2.2vw, 0.9rem);
+      }
+    }
+  }
+}
+@media only screen and (min-width: 640px) {
+  #contact-us {
+    margin-bottom: 9.4rem;
+    width: 393px;
+
+    h2 {
+      margin-bottom: 60px;
+      font-size: clamp(1.75rem, 3.8vw, 2rem);
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+
+      div {
+        flex: 1 1 45%;
+
+        &:nth-child(2n+1) { margin-right: 20px; }
+
+        &:nth-last-child(2) {
+          flex: 1 1 100%;
+          margin-right: 0;
+          margin-bottom: 50px;
+        }
+      }
+
+      button {
+        width: 40%;
+        margin: 0 auto;
+        padding: 10px 48px;
         font-size: 0.9rem;
       }
     }
   }
-  
+}
+@media only screen and (min-width: 860px) {
   #contact-us {
     margin-bottom: 12.5rem;
     width: 423px;
 
-    h2 { font-size: 2rem; }
+    h2 { font-size: clamp(2rem, 3vw, 2.25rem); }
 
     form {
       div {
         flex-basis: 35%;
 
-        label, input, textarea { font-size: 1rem; }
+        label, input, textarea { font-size: clamp(0.9rem, 1.6vw, 1.2rem); }
         &:nth-child(2n+1) { margin-right: 63px; }
         &:nth-last-child(2) { margin-right: 0; }
       }
@@ -1132,42 +1746,173 @@ button {
         width: 40%;
         margin: 0 auto;
         padding: 12px 48px;
-        font-size: 1rem;
+        font-size: clamp(0.9rem, 1.6vw, 1.2rem);
       }
     }
   }
+}
+@media only screen and (min-width: 1440px) {
+  #contact-us {
+    h2 { font-size: clamp(2.25rem, 2.4vw, 3.2rem); }
+    form {
+      div {
+        label, input, textarea { font-size: clamp(1.2rem, 1.2vw, 1.6rem); }
+      }
 
+      button {
+        font-size: clamp(1.2rem, 1.2vw, 1.6rem);
+      }
+    }
+  }
+}
+
+// ************
+//    FOOTER
+// ************
+@media only screen and (min-width: 0) {
   footer {
+    padding: 63px 0;
+    text-align: center;
+    color: #fff;
+    background-color: $primary;
+
+    #newsletter {
+      width: 300px;
+      margin: 0 auto;
+
+      h3 {
+        margin-bottom: 12px;
+        font-size: clamp(0.9rem, 4vw, 1.2rem);
+      }
+      
+      form {
+        margin: 0 auto 60px;
+        max-width: 200px;
+
+        div {
+          margin-bottom: 15px;
+          
+          label {
+            display: block;
+            margin-bottom: 3px;
+            font-size: clamp(0.75rem, 3vw, 0.9rem);
+            text-align: left;
+           }
+
+           input {
+            width: 100%;
+            padding: 5px;
+            font-size: clamp(0.75rem, 3vw, 0.9rem);
+            background-color: #F5F5F5;
+            border: none;
+           }
+        }
+
+        button {
+          width: 100%;
+          font-size: clamp(0.75rem, 3vw, 0.9rem);
+        }
+      }
+    }
+
+    .links {
+      margin-bottom: 60px;
+      font-size: clamp(0.75rem, 3vw, 0.9rem);
+
+      ul {
+        li {
+          margin-bottom: 15px;
+          cursor: pointer;
+
+          &:last-child { margin-bottom: 0; }
+        }
+      }
+    }
+    
+    .company-info {
+      p:first-child {
+        margin-bottom: 2px;
+        font-size: clamp(1.5rem, 5.6vw, 1.75rem);
+        font-family: $logo-font;
+        text-shadow: $logo-shadow;
+      }
+
+      p:nth-child(n+2) { font-size: clamp(0.75rem, 3vw, 0.9rem); }
+      p:nth-child(3) { margin-bottom: 10px; }
+      img { width: 25px; }
+    }
+  }
+}
+@media only screen and (min-width: 640px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
     padding-left: 5vw;
     padding-right: 5vw;
 
     #newsletter {
-      width: 270px;
-      margin: 0;
+      flex: 1 1 calc(100% / 3);
+      margin: 0 auto;
+      text-align: left;
 
-      h3 { font-size: 1.25rem; }
+      h3 { font-size: 1rem; }
 
       form {
-        div > label, input { font-size: 1rem; }
+        margin: 0;
 
-        button { font-size: 1rem; }
+        div {
+          label { font-size: 0.9rem; }
+          input { font-size: 0.9rem; }
+        }
+      }
+    }
+
+    .links {
+      flex: 1 1 calc(100% / 3);
+      text-align: left;
+
+      ul > li {
+        margin-bottom: 20px;
+        &:last-child { margin-bottom: 0; }
+      }
+    }
+
+    .company-info {
+      flex: 1 1 calc(100% / 3);
+      text-align: left;
+      p:first-child { margin-bottom: 3px; }
+      p:nth-child(3) { margin-bottom: 25px; }
+      img { width: 50px; }
+    }
+  }
+}
+@media only screen and (min-width: 860px) {
+  footer {
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    #newsletter {
+      width: 400px;
+      text-align: center;
+
+      form {
+        max-width: 200px;
+        margin: 0 auto;
       }
     }
 
     .links > ul > li {
       margin-bottom: 24px;
-      font-size: 1rem;
     }
 
     .company-info {
       p:first-child {
         margin-bottom: 8px;
-        font-size: 2.5rem;
       }
 
       p:nth-child(n+2) {
         margin-bottom: 2px;
-        font-size: 1rem;
         text-align: left;
       }
 
@@ -1176,31 +1921,27 @@ button {
     }
   }
 }
-
 @media only screen and (min-width: 1440px) {
-  header {
-    h1 {
-      margin-left: 6.8vw;
-      font-size: clamp(2rem, 2vw, 3rem);
-    }
-    #mobile-menu-icon { display: none; }
-    #desktop-menu {
-      font-size: clamp(1.25rem, 1.2vw, 1.8rem);
+  footer {
+    #newsletter {
+      h3 { font-size: clamp(1.2rem, 1.3vw, 1.8rem); }
+      
+      form {
+        max-width: clamp(280px, 70%, 375px);
+        div {
+          label, input { font-size: clamp(0.9rem, 1vw, 1.6rem);
+          }
+        }
 
-      ul > li { margin-right: clamp(50px, 4vw, 90px); }
-
-      .reserve-now-banner {
-        right: 3%;
-        top: 0;
-        width: clamp(95px, 7vw, 160px);
-        padding: 30px 0;
+        button { font-size: clamp(0.9rem, 1vw, 1.6rem); }
       }
     }
 
-    .cat-logo {
-      bottom: -16px;
-      left: 15px;
-      width: 60px;
+    .links { font-size: clamp(0.9rem, 1vw, 1.6rem); }
+    
+    .company-info {
+      p:first-child { font-size: clamp(1.75rem, 1.6vw, 2.8rem); }
+      p:nth-child(n+2) { font-size: clamp(0.9rem, 1vw, 1.6rem); }
     }
   }
 }

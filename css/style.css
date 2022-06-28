@@ -571,19 +571,234 @@ button {
     left: 10px;
     width: 40px;
   }
+}
+@media only screen and (min-width: 860px) {
+  header h1 {
+    margin-left: 6.8vw;
+    font-size: 1.9rem;
+  }
+  header #mobile-menu-icon {
+    display: none;
+  }
+  header #desktop-menu {
+    font-size: clamp(0.9rem, 2vw, 1.25rem);
+  }
+  header #desktop-menu ul {
+    margin-right: clamp(150px, 14vw, 400px);
+  }
+  header #desktop-menu ul li {
+    margin-right: 50px;
+  }
+  header #desktop-menu .reserve-now-banner {
+    right: 2.5%;
+    top: 0;
+    width: 100px;
+    padding: 25px 0;
+  }
+  header .cat-logo {
+    bottom: -16px;
+    left: 15px;
+    width: 60px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  header {
+    border-bottom: 4px solid #fff;
+  }
+  header h1 {
+    margin-left: 6.8vw;
+    font-size: clamp(2rem, 2vw, 3rem);
+  }
+  header #mobile-menu-icon {
+    display: none;
+  }
+  header #desktop-menu {
+    font-size: clamp(1.25rem, 1.2vw, 1.8rem);
+  }
+  header #desktop-menu ul > li {
+    margin-right: clamp(50px, 4vw, 90px);
+  }
+  header #desktop-menu .reserve-now-banner {
+    right: 3%;
+    top: 0;
+    width: clamp(95px, 7vw, 160px);
+  }
+  header .cat-logo {
+    bottom: -0.95vw;
+    left: 3vw;
+    width: clamp(60px, 4vw, 100px);
+  }
+}
+@media only screen and (min-width: 0) {
+  section h2 {
+    font-family: "Trykker", serif;
+  }
+  #hero {
+    position: relative;
+    background-color: #4F517D;
+    overflow: hidden;
+  }
+  #hero img {
+    width: 130%;
+    min-height: 460px;
+    max-height: 1177px;
+    display: block;
+    object-fit: cover;
+  }
+  #hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4F517D;
+    opacity: 0.4;
+    mix-blend-mode: overlay;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #hero img {
+    width: 110%;
+    max-height: 1400px;
+    display: block;
+    object-fit: cover;
+  }
+}
+@media only screen and (min-width: 0) {
+  #welcome-cta {
+    margin-bottom: 18vw;
+    padding: 5.2vw 0;
+    font-family: "Noto Sans", sans-serif;
+    color: #fff;
+    text-align: center;
+    background-color: #4F517D;
+  }
+  #welcome-cta h2 {
+    margin-bottom: 15px;
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+  }
+  #welcome-cta h2 span {
+    font-family: "Berkshire Swash", cursive;
+    text-shadow: -3px 2px 0px rgba(0, 0, 0, 0.25);
+  }
+  #welcome-cta p {
+    margin-bottom: 8px;
+    font-size: clamp(0.625rem, 2vw, 0.75rem);
+  }
+  #welcome-cta button {
+    font-size: clamp(0.625rem, 2vw, 0.75rem);
+    font-weight: 600;
+  }
+}
+@media only screen and (min-width: 640px) {
   #welcome-cta {
     margin-bottom: 15.8vw;
   }
   #welcome-cta h2 {
-    font-size: 1.75rem;
+    font-size: clamp(1.75rem, 4.6vw, 2.6rem);
   }
   #welcome-cta p {
-    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 2vw, 0.9rem);
   }
   #welcome-cta button {
-    font-size: 0.9rem;
+    font-size: clamp(0.75rem, 2vw, 0.9rem);
     padding: 13px 15px;
   }
+}
+@media only screen and (min-width: 860px) {
+  #welcome-cta {
+    margin-bottom: 15.8vw;
+  }
+  #welcome-cta h2 {
+    margin-bottom: 1.25rem;
+    font-size: clamp(2.6rem, 4vw, 3rem);
+  }
+  #welcome-cta p {
+    margin-bottom: 0.75rem;
+    font-size: clamp(0.9rem, 1.4vw, 1.2rem);
+  }
+  #welcome-cta button {
+    font-size: clamp(0.9rem, 1.4vw, 1.2rem);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #welcome-cta h2 {
+    font-size: clamp(3rem, 3vw, 4rem);
+  }
+  #welcome-cta p {
+    font-size: clamp(1.2rem, 1.2vw, 1.6rem);
+  }
+  #welcome-cta button {
+    font-size: clamp(1.2rem, 1.2vw, 1.6rem);
+  }
+}
+@media only screen and (min-width: 0) {
+  #features {
+    max-width: 90%;
+    margin: 0 auto 6rem;
+    text-align: center;
+  }
+  #features h2 {
+    margin-bottom: 3.2rem;
+    font-size: clamp(1.5rem, 4.8vw, 1.75rem);
+  }
+  #features .feature-container {
+    overflow: hidden;
+    width: 60vw;
+    max-width: 225px;
+    margin: 0 auto 40px;
+    background-color: #4F517D;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  }
+  #features .feature-container:last-child {
+    margin-bottom: 0;
+  }
+  #features .feature-graphic-container {
+    position: relative;
+    height: 90px;
+  }
+  #features .feature-graphic-container::before, #features .feature-graphic-container::after {
+    content: "";
+    position: absolute;
+    bottom: -1vh;
+    width: 40vw;
+    height: 130%;
+    background-color: #fff;
+  }
+  #features .feature-graphic-container::before {
+    right: 50%;
+    transform: rotateZ(11.61deg) translateX(11%);
+  }
+  #features .feature-graphic-container::after {
+    left: 50%;
+    transform: rotateZ(-11.61deg) translateX(-11%);
+  }
+  #features .feature-graphic-container .feature-rectangle {
+    position: absolute;
+    width: 60vw;
+    height: 120%;
+    background-color: white;
+  }
+  #features .feature-graphic-container img {
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 120px;
+  }
+  #features .feature-text-container {
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 10vw 25px 5vw;
+    font-size: 0.75rem;
+    color: #fff;
+  }
+}
+@media only screen and (min-width: 640px) {
   #features {
     display: flex;
     flex-wrap: wrap;
@@ -593,13 +808,90 @@ button {
   #features h2 {
     flex: 1 1 100%;
     margin-bottom: 60px;
-    font-size: 1.75rem;
+    font-size: clamp(1.75rem, 3.8vw, 2rem);
   }
   #features .feature-container {
     overflow: hidden;
     width: 30%;
     margin-bottom: 0;
   }
+  #features .feature-text-container {
+    font-size: clamp(0.75rem, 2vw, 0.9rem);
+  }
+}
+@media only screen and (min-width: 860px) {
+  #features {
+    max-width: 1000px;
+    margin-bottom: 12.5rem;
+  }
+  #features h2 {
+    font-size: clamp(2rem, 3vw, 2.25rem);
+  }
+  #features .feature-container {
+    max-width: 250px;
+  }
+  #features .feature-graphic-container > img {
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+    width: 160px;
+  }
+  #features .feature-text-container {
+    font-size: clamp(0.9rem, 1.4vw, 1.2rem);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #features h2 {
+    font-size: clamp(2.25rem, 2.4vw, 3.2rem);
+  }
+  #features .feature-text-container {
+    font-size: clamp(1.2rem, 1.2vw, 1.6rem);
+  }
+}
+@media only screen and (min-width: 0) {
+  #meet-cats {
+    max-width: 300px;
+    margin: 0 auto 6rem;
+    text-align: center;
+  }
+  #meet-cats h2 {
+    margin-bottom: 3.2rem;
+    font-size: clamp(1.5rem, 4.8vw, 1.75rem);
+  }
+  #meet-cats .cat-info {
+    display: flex;
+    position: relative;
+    margin-left: 20%;
+    margin-bottom: 2.5rem;
+  }
+  #meet-cats .img-container {
+    width: 118px;
+    height: 118px;
+    position: relative;
+    z-index: 1;
+    border: 4px solid #fff;
+    border-radius: 100%;
+    -webkit-box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.3);
+  }
+  #meet-cats .img-container img {
+    width: 110px;
+  }
+  #meet-cats .name-container {
+    align-self: flex-end;
+    position: absolute;
+    left: 20%;
+    width: 140px;
+    padding: 10px 20px;
+    font-weight: 600;
+    text-align: right;
+    color: #fff;
+    background-color: #4F517D;
+    border-radius: 8px;
+  }
+}
+@media only screen and (min-width: 640px) {
   #meet-cats {
     max-width: 90%;
     display: flex;
@@ -609,7 +901,7 @@ button {
   #meet-cats h2 {
     flex: 1 1 100%;
     margin-bottom: 60px;
-    font-size: 1.75rem;
+    font-size: clamp(1.75rem, 3.8vw, 2rem);
   }
   #meet-cats .cat-info {
     display: flex;
@@ -627,6 +919,127 @@ button {
   #meet-cats .name-container {
     left: 50%;
   }
+}
+@media only screen and (min-width: 860px) {
+  #meet-cats {
+    max-width: 1000px;
+    margin-bottom: 12.5rem;
+  }
+  #meet-cats h2 {
+    font-size: clamp(2rem, 3vw, 2.25rem);
+  }
+  #meet-cats .cat-info {
+    flex-basis: 45%;
+  }
+  #meet-cats .img-container {
+    width: 208px;
+    height: 208px;
+  }
+  #meet-cats .img-container img {
+    width: 200px;
+  }
+  #meet-cats .name-container {
+    width: 200px;
+    padding-right: 30px;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #meet-cats h2 {
+    font-size: clamp(2.25rem, 2.4vw, 3.2rem);
+  }
+  #meet-cats .img-container {
+    width: 262px;
+    height: 262px;
+    border: 6px solid #fff;
+  }
+  #meet-cats .img-container img {
+    width: 250px;
+  }
+  #meet-cats .name-container {
+    width: 240px;
+    padding-right: 45px;
+    font-size: 1.75rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  #meet-cats .name-container {
+    width: 270px;
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 0) {
+  #events {
+    margin: 0 40px 6rem;
+    text-align: center;
+  }
+  #events h2 {
+    margin-bottom: 3.2rem;
+    font-size: clamp(1.5rem, 4.8vw, 1.75rem);
+  }
+  #events .event-container {
+    position: relative;
+    max-width: 250px;
+    margin: 0 auto 40px;
+    padding: 20px 0;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  }
+  #events .event-container h3 {
+    font-size: clamp(1.125rem, 3.6vw, 1.4rem);
+  }
+  #events .event-container .event-img {
+    position: relative;
+    width: 130px;
+    margin: 0 auto 18px;
+  }
+  #events .event-container .event-img img {
+    width: 130px;
+    height: 130px;
+  }
+  #events .event-container .event-img p {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 52px;
+    padding: 6px 0;
+    font-size: 0.625rem;
+    background: #fff;
+    border-radius: 16px;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  }
+  #events .event-container .event-description {
+    padding: 0 30px;
+  }
+  #events .event-container .event-description p:first-child {
+    margin-bottom: 3.5vw;
+    font-size: clamp(0.9rem, 2.2vw, 1.2rem);
+    font-weight: bold;
+  }
+  #events .event-container .event-description p:nth-child(2) {
+    margin-bottom: 40px;
+    font-size: clamp(0.75rem, 2.2vw, 0.9rem);
+  }
+  #events .event-container h3 {
+    margin-bottom: 12px;
+    font-family: "Trykker", serif;
+  }
+  #events .event-container button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 0;
+    font-size: clamp(0.9rem, 1.4vw, 1.2rem);
+    font-weight: 600;
+    border-radius: 0 0 5px 5px;
+  }
+}
+@media only screen and (min-width: 640px) {
   #events {
     display: flex;
     flex-wrap: wrap;
@@ -636,7 +1049,7 @@ button {
   #events h2 {
     flex: 1 1 100%;
     margin-bottom: 60px;
-    font-size: 1.75rem;
+    font-size: clamp(1.75rem, 3.8vw, 2rem);
   }
   #events .event-container {
     max-width: 31.6666666667%;
@@ -645,12 +1058,94 @@ button {
   #events .event-container .event-description {
     max-width: 250px;
   }
+}
+@media only screen and (min-width: 860px) {
+  #events {
+    max-width: 1000px;
+    margin-bottom: 12.5rem;
+  }
+  #events h2 {
+    font-size: clamp(2rem, 3vw, 2.25rem);
+  }
+  #events .event-container {
+    max-width: 31.6666666667%;
+    padding: 28px 50px;
+  }
+  #events .event-container h3 {
+    font-size: clamp(1.4rem, 3vw, 1.7rem);
+  }
+  #events .event-container .event-img {
+    width: 187px;
+    margin: 0 auto 25px;
+  }
+  #events .event-container .event-img img {
+    width: 187px;
+    height: 187px;
+  }
+  #events .event-container .event-img p {
+    width: 74px;
+    padding: 8px 0;
+    font-size: 0.9rem;
+  }
+  #events .event-container .event-description {
+    padding: 0 20px;
+  }
+  #events .event-container .event-description p:first-child {
+    margin-bottom: 14px;
+    font-size: clamp(1.2rem, 1.3vw, 1.4rem);
+  }
+  #events .event-container .event-description p:nth-child(2) {
+    margin-bottom: 35px;
+    font-size: clamp(0.9rem, 1.4vw, 1.2rem);
+  }
+  #events .event-container button {
+    font-size: clamp(1.2rem, 1.3vw, 1.4rem);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #events h2 {
+    font-size: clamp(2.25rem, 2.4vw, 3.2rem);
+  }
+}
+@media only screen and (min-width: 0) {
+  #gallery {
+    margin: 0 auto 6rem;
+    text-align: center;
+  }
+  #gallery h2 {
+    margin-bottom: 3.2rem;
+    font-size: clamp(1.5rem, 4.8vw, 1.75rem);
+  }
+  #gallery .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #gallery .gallery-container img {
+    width: 50%;
+    max-width: 185px;
+    border-top: 2px solid #fff;
+  }
+  #gallery .gallery-container img:nth-last-child(-n+2) {
+    border-bottom: 2px solid #fff;
+  }
+  #gallery .gallery-container img:nth-child(odd) {
+    border-left: 2px solid #fff;
+  }
+  #gallery .gallery-container img:nth-child(even) {
+    border-right: 2px solid #fff;
+  }
+  #gallery .gallery-container img:nth-child(2n+1) {
+    border-right: 2px solid #fff;
+  }
+}
+@media only screen and (min-width: 640px) {
   #gallery {
     margin-bottom: 9.4rem;
   }
   #gallery h2 {
     margin-bottom: 60px;
-    font-size: 1.75rem;
+    font-size: clamp(1.75rem, 3.8vw, 2rem);
   }
   #gallery .gallery-container {
     max-width: 90%;
@@ -659,6 +1154,100 @@ button {
   #gallery .gallery-container img {
     max-width: 22.5%;
   }
+}
+@media only screen and (min-width: 860px) {
+  #gallery {
+    margin-bottom: 12.5rem;
+  }
+  #gallery h2 {
+    font-size: clamp(2rem, 3vw, 2.25rem);
+  }
+  #gallery .gallery-container {
+    max-width: 1000px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #gallery h2 {
+    font-size: clamp(2.25rem, 2.4vw, 3.2rem);
+  }
+  #gallery .gallery-container {
+    max-width: 1440px;
+  }
+}
+@media only screen and (min-width: 0) {
+  #testimonials {
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto 8.5rem;
+    text-align: center;
+  }
+  #testimonials h2 {
+    margin-bottom: 3.2rem;
+    font-size: clamp(1.5rem, 4.8vw, 1.75rem);
+  }
+  #testimonials .testimonial {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  #testimonials .testimonial:nth-child(3), #testimonials .testimonial:nth-child(4) {
+    display: none;
+  }
+  #testimonials .author-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.3);
+  }
+  #testimonials .author-info p {
+    margin-bottom: 18px;
+    font-size: clamp(1rem, 2.8vw, 1.25rem);
+  }
+  #testimonials .testimonial-review {
+    position: relative;
+    margin: 0 auto 40px;
+    font-size: clamp(0.75rem, 2.2vw, 0.9rem);
+    font-style: italic;
+    color: #595959;
+  }
+  #testimonials .testimonial-review .review-stars {
+    margin-bottom: 18px;
+  }
+  #testimonials .testimonial-review .review-stars img {
+    width: 16px;
+  }
+  #testimonials #testimonial-controls .testimonial-control {
+    position: absolute;
+    top: 60%;
+    transform: translateY(60%);
+    cursor: pointer;
+  }
+  #testimonials #testimonial-controls .prev-testimonial {
+    left: 5%;
+  }
+  #testimonials #testimonial-controls .next-testimonial {
+    right: 5%;
+  }
+  #testimonials .testimonial-progress {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+  }
+  #testimonials .testimonial-progress div {
+    width: 9px;
+    height: 9px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+  }
+  #testimonials .testimonial-progress #active-testimonial {
+    background-color: #ccc;
+  }
+}
+@media only screen and (min-width: 640px) {
   #testimonials {
     display: flex;
     flex-wrap: wrap;
@@ -668,7 +1257,7 @@ button {
   #testimonials h2 {
     flex: 1 1 100%;
     margin-bottom: 60px;
-    font-size: 1.75rem;
+    font-size: clamp(1.75rem, 3.8vw, 2rem);
   }
   #testimonials .testimonial {
     padding: 30px 27px 5px;
@@ -704,243 +1293,14 @@ button {
   #testimonials .testimonial-progress div:nth-child(3) {
     display: none;
   }
-  #reserve-now {
-    margin-bottom: 9.4rem;
-    padding-top: 80px;
-    padding-bottom: 100px;
-    gap: 0;
-  }
-  #reserve-now h2 {
-    margin-bottom: 60px;
-    font-size: 1.75rem;
-  }
-  #reserve-now .reservation-option {
-    height: 255px;
-  }
-  #reserve-now .reservation-option:nth-child(2), #reserve-now .reservation-option:nth-child(3) {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0;
-  }
-  #reserve-now .reservation-option:nth-child(2) button, #reserve-now .reservation-option:nth-child(3) button {
-    align-self: flex-start;
-    margin-top: auto;
-    font-size: 0.9rem;
-    padding: 10px 28px;
-  }
-  #reserve-now .reservation-option p:nth-child(2) {
-    font-size: 0.9rem;
-  }
-  #contact-us {
-    margin-bottom: 9.4rem;
-    width: 393px;
-  }
-  #contact-us h2 {
-    margin-bottom: 60px;
-    font-size: 1.75rem;
-  }
-  #contact-us form {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #contact-us form div {
-    flex: 1 1 45%;
-  }
-  #contact-us form div label {
-    font-size: 0.9rem;
-  }
-  #contact-us form div input, #contact-us form div textarea {
-    font-size: 0.9rem;
-  }
-  #contact-us form div:nth-child(2n+1) {
-    margin-right: 20px;
-  }
-  #contact-us form div:nth-last-child(2) {
-    flex: 1 1 100%;
-    margin-right: 0;
-    margin-bottom: 50px;
-  }
-  #contact-us form button {
-    width: 40%;
-    margin: 0 auto;
-    padding: 10px 48px;
-    font-size: 0.9rem;
-  }
-  footer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-  }
-  footer #newsletter {
-    width: 210px;
-    margin: 0;
-  }
-  footer #newsletter h3 {
-    font-size: 1rem;
-  }
-  footer #newsletter form {
-    margin-bottom: 0;
-  }
-  footer #newsletter form div label {
-    font-size: 0.9rem;
-  }
-  footer #newsletter form div input {
-    font-size: 0.9rem;
-  }
-  footer .links > ul > li {
-    margin-bottom: 20px;
-    font-size: 0.9rem;
-    text-align: left;
-  }
-  footer .links > ul > li:last-child {
-    margin-bottom: 0;
-  }
-  footer .company-info p:first-child {
-    margin-bottom: 3px;
-  }
-  footer .company-info p:nth-child(n+2) {
-    text-align: left;
-  }
-  footer .company-info p:nth-child(3) {
-    margin-bottom: 25px;
-  }
-  footer .company-info img {
-    width: 50px;
-  }
 }
 @media only screen and (min-width: 860px) {
-  header h1 {
-    margin-left: 6.8vw;
-    font-size: 1.9rem;
-  }
-  header #mobile-menu-icon {
-    display: none;
-  }
-  header #desktop-menu {
-    font-size: clamp(0.9rem, 2vw, 1.25rem);
-  }
-  header #desktop-menu ul {
-    margin-right: clamp(150px, 14vw, 400px);
-  }
-  header #desktop-menu ul li {
-    margin-right: 50px;
-  }
-  header #desktop-menu .reserve-now-banner {
-    right: 15px;
-    top: 0;
-    width: 95px;
-    padding: 20px 0;
-  }
-  header .cat-logo {
-    bottom: -16px;
-    left: 15px;
-    width: 60px;
-  }
-  #welcome-cta {
-    margin-bottom: 15.8vw;
-  }
-  #welcome-cta h2 {
-    margin-bottom: 1.25rem;
-    font-size: 2.6rem;
-  }
-  #welcome-cta p {
-    margin-bottom: 0.75rem;
-    font-size: 0.9rem;
-  }
-  #welcome-cta button {
-    font-size: 1rem;
-  }
-  #features {
-    max-width: 1000px;
-    margin-bottom: 12.5rem;
-  }
-  #features h2 {
-    font-size: 2rem;
-  }
-  #features .feature-container {
-    max-width: 250px;
-  }
-  #features .feature-graphic-container > img {
-    left: 50%;
-    bottom: -40px;
-    transform: translateX(-50%);
-    width: 160px;
-  }
-  #features .feature-text-container {
-    font-size: 0.9rem;
-  }
-  #meet-cats {
-    max-width: 1000px;
-    margin-bottom: 12.5rem;
-  }
-  #meet-cats h2 {
-    font-size: 2rem;
-  }
-  #meet-cats .cat-info {
-    flex-basis: 45%;
-  }
-  #meet-cats .img-container {
-    width: 208px;
-    height: 208px;
-  }
-  #meet-cats .img-container img {
-    width: 200px;
-  }
-  #meet-cats .name-container {
-    width: 200px;
-    padding-right: 30px;
-    font-size: 1.5rem;
-  }
-  #events {
-    max-width: 1000px;
-    margin-bottom: 12.5rem;
-  }
-  #events h2 {
-    font-size: 2rem;
-  }
-  #events .event-container {
-    max-width: 31.6666666667%;
-    padding: 28px 50px;
-  }
-  #events .event-container .event-img {
-    width: 187px;
-    margin: 0 auto 25px;
-  }
-  #events .event-container .event-img img {
-    width: 187px;
-    height: 187px;
-  }
-  #events .event-container .event-img p {
-    width: 74px;
-    padding: 8px 0;
-    font-size: 0.9rem;
-  }
-  #events .event-container .event-description {
-    padding: 0 20px;
-  }
-  #events .event-container .event-description p:first-child {
-    margin-bottom: 14px;
-    font-size: 1rem;
-  }
-  #events .event-container .event-description p:nth-child(2) {
-    margin-bottom: 35px;
-    font-size: 0.9rem;
-  }
-  #gallery {
-    margin-bottom: 12.5rem;
-  }
-  #gallery h2 {
-    font-size: 2rem;
-  }
-  #gallery .gallery-container {
-    max-width: 1000px;
-  }
   #testimonials {
     margin-bottom: 12.5rem;
     max-width: 1000px;
   }
   #testimonials h2 {
-    font-size: 2rem;
+    font-size: clamp(2rem, 3vw, 2.25rem);
   }
   #testimonials .testimonial {
     flex-basis: 33.3333333333%;
@@ -960,10 +1320,10 @@ button {
   }
   #testimonials .author-info p {
     margin-bottom: 21px;
-    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 1.8vw, 1.5rem);
   }
   #testimonials .testimonial-review {
-    font-size: 0.9rem;
+    font-size: clamp(0.9rem, 1.8vw, 1.2rem);
   }
   #testimonials #testimonial-controls {
     display: none;
@@ -971,13 +1331,95 @@ button {
   #testimonials .testimonial-progress {
     display: none;
   }
+}
+@media only screen and (min-width: 1440px) {
+  #testimonials h2 {
+    font-size: clamp(2.25rem, 2.4vw, 3.2rem);
+  }
+  #testimonials .author-info p {
+    font-size: clamp(1.5rem, 1.2vw, 1.6rem);
+  }
+}
+@media only screen and (min-width: 0) {
+  #reserve-now {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8vw;
+    margin: 0 auto 6rem;
+    padding: 65px 8vw;
+    color: #fff;
+    background-image: url("../img/reserve/reserve-cat-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-color: #67B6FF;
+    background-blend-mode: multiply;
+  }
+  #reserve-now h2 {
+    flex: 1 1 100%;
+    margin-bottom: 3.8rem;
+    font-size: clamp(1.5rem, 4.8vw, 1.75rem);
+    text-align: center;
+  }
+  #reserve-now .reservation-option {
+    position: relative;
+    z-index: 1;
+    width: 230px;
+    margin: 0 auto;
+  }
+  #reserve-now .reservation-option:nth-child(2) {
+    margin-bottom: 75px;
+  }
+  #reserve-now .reservation-option p:first-child {
+    margin-bottom: 24px;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    font-weight: 600;
+  }
+  #reserve-now .reservation-option p:nth-child(2) {
+    margin-bottom: 36px;
+    font-size: clamp(0.75rem, 2.6vw, 0.9rem);
+  }
+  #reserve-now .reservation-option button {
+    padding: 10px 24px;
+    font-size: clamp(0.75rem, 2.6vw, 0.9rem);
+  }
+}
+@media only screen and (min-width: 640px) {
+  #reserve-now {
+    margin-bottom: 9.4rem;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    gap: 0;
+  }
+  #reserve-now h2 {
+    margin-bottom: 60px;
+    font-size: clamp(1.75rem, 3.8vw, 2rem);
+  }
+  #reserve-now .reservation-option {
+    height: 255px;
+  }
+  #reserve-now .reservation-option:nth-child(2), #reserve-now .reservation-option:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  #reserve-now .reservation-option:nth-child(2) button, #reserve-now .reservation-option:nth-child(3) button {
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 10px 28px;
+  }
+  #reserve-now .reservation-option p:nth-child(2) {
+    font-size: clamp(0.9rem, 2.2vw, 1rem);
+  }
+}
+@media only screen and (min-width: 860px) {
   #reserve-now {
     margin-bottom: 12.5rem;
     padding-top: 80px;
     padding-bottom: 136px;
   }
   #reserve-now h2 {
-    font-size: 2rem;
+    font-size: clamp(2rem, 3vw, 2.25rem);
   }
   #reserve-now .reservation-option {
     width: 280px;
@@ -985,30 +1427,110 @@ button {
   }
   #reserve-now .reservation-option:nth-child(2) p:first-child, #reserve-now .reservation-option:nth-child(3) p:first-child {
     margin-bottom: 22px;
-    font-size: 1.5rem;
   }
   #reserve-now .reservation-option:nth-child(2) p:nth-child(2), #reserve-now .reservation-option:nth-child(3) p:nth-child(2) {
     margin-bottom: 70px;
-    font-size: 1rem;
   }
-  #reserve-now .reservation-option:nth-child(2) button, #reserve-now .reservation-option:nth-child(3) button {
-    font-size: 1rem;
+}
+@media only screen and (min-width: 1440px) {
+  #reserve-now {
+    max-width: 1440px;
+  }
+  #reserve-now h2 {
+    font-size: clamp(2.25rem, 2.4vw, 3.2rem);
+  }
+  #reserve-now .reservation-option {
+    width: 350px;
+    height: 100%;
+  }
+  #reserve-now .reservation-option p:first-child {
+    width: 80%;
+    font-size: clamp(1.2rem, 1.3vw, 2rem);
   }
   #reserve-now .reservation-option p:nth-child(2) {
+    font-size: clamp(1.2rem, 1.2vw, 1.6rem);
+  }
+  #reserve-now .reservation-option button {
+    font-size: clamp(1.2rem, 1.2vw, 1.6rem);
+  }
+}
+@media only screen and (min-width: 0) {
+  #contact-us {
+    margin: 0 auto 6rem;
+    width: 170px;
+  }
+  #contact-us h2 {
+    margin-bottom: 3.2rem;
+    font-size: clamp(1.5rem, 4.8vw, 1.75rem);
+    text-align: center;
+  }
+  #contact-us form div {
+    margin-bottom: 15px;
+  }
+  #contact-us form div label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: clamp(0.75rem, 2.2vw, 0.9rem);
+  }
+  #contact-us form div input, #contact-us form div textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: clamp(0.75rem, 2.2vw, 0.9rem);
+    background-color: #F5F5F5;
+    border: none;
+  }
+  #contact-us form div:nth-last-child(2) {
+    margin-bottom: 27px;
+  }
+  #contact-us form button {
+    width: 100%;
+    font-size: clamp(0.75rem, 2.2vw, 0.9rem);
+  }
+}
+@media only screen and (min-width: 640px) {
+  #contact-us {
+    margin-bottom: 9.4rem;
+    width: 393px;
+  }
+  #contact-us h2 {
+    margin-bottom: 60px;
+    font-size: clamp(1.75rem, 3.8vw, 2rem);
+  }
+  #contact-us form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #contact-us form div {
+    flex: 1 1 45%;
+  }
+  #contact-us form div:nth-child(2n+1) {
+    margin-right: 20px;
+  }
+  #contact-us form div:nth-last-child(2) {
+    flex: 1 1 100%;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  #contact-us form button {
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px 48px;
     font-size: 0.9rem;
   }
+}
+@media only screen and (min-width: 860px) {
   #contact-us {
     margin-bottom: 12.5rem;
     width: 423px;
   }
   #contact-us h2 {
-    font-size: 2rem;
+    font-size: clamp(2rem, 3vw, 2.25rem);
   }
   #contact-us form div {
     flex-basis: 35%;
   }
   #contact-us form div label, #contact-us form div input, #contact-us form div textarea {
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 1.6vw, 1.2rem);
   }
   #contact-us form div:nth-child(2n+1) {
     margin-right: 63px;
@@ -1020,36 +1542,156 @@ button {
     width: 40%;
     margin: 0 auto;
     padding: 12px 48px;
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 1.6vw, 1.2rem);
   }
+}
+@media only screen and (min-width: 1440px) {
+  #contact-us h2 {
+    font-size: clamp(2.25rem, 2.4vw, 3.2rem);
+  }
+  #contact-us form div label, #contact-us form div input, #contact-us form div textarea {
+    font-size: clamp(1.2rem, 1.2vw, 1.6rem);
+  }
+  #contact-us form button {
+    font-size: clamp(1.2rem, 1.2vw, 1.6rem);
+  }
+}
+@media only screen and (min-width: 0) {
   footer {
+    padding: 63px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #4F517D;
+  }
+  footer #newsletter {
+    width: 300px;
+    margin: 0 auto;
+  }
+  footer #newsletter h3 {
+    margin-bottom: 12px;
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
+  }
+  footer #newsletter form {
+    margin: 0 auto 60px;
+    max-width: 200px;
+  }
+  footer #newsletter form div {
+    margin-bottom: 15px;
+  }
+  footer #newsletter form div label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: clamp(0.75rem, 3vw, 0.9rem);
+    text-align: left;
+  }
+  footer #newsletter form div input {
+    width: 100%;
+    padding: 5px;
+    font-size: clamp(0.75rem, 3vw, 0.9rem);
+    background-color: #F5F5F5;
+    border: none;
+  }
+  footer #newsletter form button {
+    width: 100%;
+    font-size: clamp(0.75rem, 3vw, 0.9rem);
+  }
+  footer .links {
+    margin-bottom: 60px;
+    font-size: clamp(0.75rem, 3vw, 0.9rem);
+  }
+  footer .links ul li {
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  footer .links ul li:last-child {
+    margin-bottom: 0;
+  }
+  footer .company-info p:first-child {
+    margin-bottom: 2px;
+    font-size: clamp(1.5rem, 5.6vw, 1.75rem);
+    font-family: "Berkshire Swash", cursive;
+    text-shadow: -3px 2px 0px rgba(0, 0, 0, 0.25);
+  }
+  footer .company-info p:nth-child(n+2) {
+    font-size: clamp(0.75rem, 3vw, 0.9rem);
+  }
+  footer .company-info p:nth-child(3) {
+    margin-bottom: 10px;
+  }
+  footer .company-info img {
+    width: 25px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
     padding-left: 5vw;
     padding-right: 5vw;
   }
   footer #newsletter {
-    width: 270px;
-    margin: 0;
+    flex: 1 1 33.3333333333%;
+    margin: 0 auto;
+    text-align: left;
   }
   footer #newsletter h3 {
-    font-size: 1.25rem;
-  }
-  footer #newsletter form div > label, footer #newsletter form input {
     font-size: 1rem;
   }
-  footer #newsletter form button {
-    font-size: 1rem;
+  footer #newsletter form {
+    margin: 0;
+  }
+  footer #newsletter form div label {
+    font-size: 0.9rem;
+  }
+  footer #newsletter form div input {
+    font-size: 0.9rem;
+  }
+  footer .links {
+    flex: 1 1 33.3333333333%;
+    text-align: left;
+  }
+  footer .links ul > li {
+    margin-bottom: 20px;
+  }
+  footer .links ul > li:last-child {
+    margin-bottom: 0;
+  }
+  footer .company-info {
+    flex: 1 1 33.3333333333%;
+    text-align: left;
+  }
+  footer .company-info p:first-child {
+    margin-bottom: 3px;
+  }
+  footer .company-info p:nth-child(3) {
+    margin-bottom: 25px;
+  }
+  footer .company-info img {
+    width: 50px;
+  }
+}
+@media only screen and (min-width: 860px) {
+  footer {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  footer #newsletter {
+    width: 400px;
+    text-align: center;
+  }
+  footer #newsletter form {
+    max-width: 200px;
+    margin: 0 auto;
   }
   footer .links > ul > li {
     margin-bottom: 24px;
-    font-size: 1rem;
   }
   footer .company-info p:first-child {
     margin-bottom: 8px;
-    font-size: 2.5rem;
   }
   footer .company-info p:nth-child(n+2) {
     margin-bottom: 2px;
-    font-size: 1rem;
     text-align: left;
   }
   footer .company-info p:nth-child(3) {
@@ -1060,29 +1702,26 @@ button {
   }
 }
 @media only screen and (min-width: 1440px) {
-  header h1 {
-    margin-left: 6.8vw;
-    font-size: clamp(2rem, 2vw, 3rem);
+  footer #newsletter h3 {
+    font-size: clamp(1.2rem, 1.3vw, 1.8rem);
   }
-  header #mobile-menu-icon {
-    display: none;
+  footer #newsletter form {
+    max-width: clamp(280px, 70%, 375px);
   }
-  header #desktop-menu {
-    font-size: clamp(1.25rem, 1.2vw, 1.8rem);
+  footer #newsletter form div label, footer #newsletter form div input {
+    font-size: clamp(0.9rem, 1vw, 1.6rem);
   }
-  header #desktop-menu ul > li {
-    margin-right: clamp(50px, 4vw, 90px);
+  footer #newsletter form button {
+    font-size: clamp(0.9rem, 1vw, 1.6rem);
   }
-  header #desktop-menu .reserve-now-banner {
-    right: 3%;
-    top: 0;
-    width: clamp(95px, 7vw, 160px);
-    padding: 30px 0;
+  footer .links {
+    font-size: clamp(0.9rem, 1vw, 1.6rem);
   }
-  header .cat-logo {
-    bottom: -16px;
-    left: 15px;
-    width: 60px;
+  footer .company-info p:first-child {
+    font-size: clamp(1.75rem, 1.6vw, 2.8rem);
+  }
+  footer .company-info p:nth-child(n+2) {
+    font-size: clamp(0.9rem, 1vw, 1.6rem);
   }
 }
 
