@@ -873,11 +873,11 @@ button {
     max-width: 350px;
   }
   #features .feature-graphic-container {
-    height: 130px;
+    height: 150px;
   }
   #features .feature-graphic-container img {
-    bottom: -50px;
-    width: 220px;
+    bottom: -55px;
+    width: 70%;
   }
   #features .feature-text-container {
     padding: 6vw 60px 2vw;
@@ -983,6 +983,7 @@ button {
 @media only screen and (min-width: 1440px) {
   #meet-cats {
     margin-bottom: 150px;
+    gap: 3vw;
   }
   #meet-cats h2 {
     font-size: clamp(2.25rem, 2.4vw, 3.2rem);
@@ -1026,7 +1027,7 @@ button {
     position: relative;
     max-width: 250px;
     margin: 0 auto 40px;
-    padding: 20px 0;
+    padding: 30px 0 50px;
     border-radius: 5px;
     -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
@@ -1061,12 +1062,11 @@ button {
     padding: 0 30px;
   }
   #events .event-container .event-description p:first-child {
-    margin-bottom: 3.5vw;
+    margin-bottom: 15px;
     font-size: clamp(0.9rem, 2.2vw, 1.2rem);
     font-weight: bold;
   }
   #events .event-container .event-description p:nth-child(2) {
-    margin-bottom: 40px;
     font-size: clamp(0.75rem, 2.2vw, 0.9rem);
   }
   #events .event-container h3 {
@@ -1106,7 +1106,7 @@ button {
 }
 @media only screen and (min-width: 860px) {
   #events {
-    max-width: 1000px;
+    max-width: 1200px;
     margin-bottom: 150px;
   }
   #events h2 {
@@ -1114,26 +1114,27 @@ button {
   }
   #events .event-container {
     max-width: 31.6666666667%;
-    padding: 28px 50px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
   #events .event-container h3 {
     font-size: clamp(1.4rem, 3vw, 1.7rem);
   }
   #events .event-container .event-img {
-    width: 187px;
+    width: 225px;
     margin: 0 auto 25px;
   }
   #events .event-container .event-img img {
-    width: 187px;
-    height: 187px;
+    width: 225px;
+    height: 225px;
   }
   #events .event-container .event-img p {
-    width: 74px;
+    width: 75px;
     padding: 8px 0;
-    font-size: 0.9rem;
+    font-size: clamp(0.75rem, 1.4vw, 1rem);
   }
   #events .event-container .event-description {
-    padding: 0 20px;
+    padding: 0;
   }
   #events .event-container .event-description p:first-child {
     margin-bottom: 14px;
