@@ -102,6 +102,9 @@ button {
     background-color: #C2095A;
     border-radius: 0 0 5px 5px;
     cursor: pointer;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
   }
   header .cat-logo {
     position: absolute;
@@ -178,7 +181,7 @@ button {
     width: clamp(95px, 7vw, 160px);
   }
   header .cat-logo {
-    bottom: -0.95vw;
+    bottom: -1.1vw;
     left: 3vw;
     width: clamp(60px, 4vw, 100px);
   }
@@ -333,7 +336,7 @@ button {
   #features .feature-graphic-container::before, #features .feature-graphic-container::after {
     content: "";
     position: absolute;
-    bottom: -3vh;
+    bottom: -2vh;
     width: 100%;
     height: 140%;
     background-color: #fff;
@@ -731,6 +734,7 @@ button {
     font-size: clamp(0.9rem, 1.4vw, 1.2rem);
   }
   #events .event-container button {
+    padding: 14px 0;
     font-size: clamp(1.2rem, 1.3vw, 1.4rem);
   }
 }
@@ -748,6 +752,9 @@ button {
   }
   #events .event-container .event-description {
     margin: 0 auto;
+  }
+  #events .event-container button {
+    padding: 16px 0;
   }
 }
 @media only screen and (min-width: 0) {
@@ -1046,7 +1053,7 @@ button {
 @media only screen and (min-width: 640px) {
   #reserve-now {
     margin-bottom: 9.4rem;
-    padding-top: 80px;
+    padding-top: 100px;
     padding-bottom: 100px;
     gap: 0;
   }
@@ -1075,8 +1082,6 @@ button {
 @media only screen and (min-width: 860px) {
   #reserve-now {
     margin-bottom: 150px;
-    padding-top: 80px;
-    padding-bottom: 136px;
   }
   #reserve-now h2 {
     font-size: clamp(2rem, 3vw, 2.25rem);
@@ -1098,21 +1103,25 @@ button {
 }
 @media only screen and (min-width: 1440px) {
   #reserve-now {
+    max-width: 1800px;
     margin-bottom: 200px;
+    padding-left: 6vw;
+    padding-right: 6vw;
   }
   #reserve-now h2 {
     margin-bottom: 100px;
     font-size: clamp(2.25rem, 2.4vw, 3.2rem);
   }
   #reserve-now #reservation-options > .reservation-option {
-    width: 25%;
+    width: 30%;
     height: 100%;
   }
   #reserve-now #reservation-options > .reservation-option p:first-child {
-    width: 80%;
-    font-size: clamp(1.2rem, 1.3vw, 2rem);
+    width: 110%;
+    font-size: clamp(1.2rem, 1.6vw, 2rem);
   }
   #reserve-now #reservation-options > .reservation-option p:nth-child(2) {
+    min-height: 85px;
     font-size: clamp(1rem, 1.2vw, 1.6rem);
   }
   #reserve-now #reservation-options > .reservation-option button {
