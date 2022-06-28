@@ -76,14 +76,15 @@ button {
   }
   header #desktop-menu {
     display: none;
-    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 2vw, 0.9rem);
   }
   header #desktop-menu ul {
     display: flex;
-    margin-right: 15vw;
+    margin-right: clamp(50px, 16vw, 200px);
   }
   header #desktop-menu ul li {
     margin-right: 30px;
+    cursor: pointer;
   }
   header #desktop-menu ul li:last-child {
     margin-right: 0;
@@ -816,15 +817,18 @@ button {
     display: none;
   }
   header #desktop-menu {
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2vw, 1.25rem);
   }
-  header #desktop-menu ul > li {
+  header #desktop-menu ul {
+    margin-right: clamp(150px, 14vw, 400px);
+  }
+  header #desktop-menu ul li {
     margin-right: 50px;
   }
   header #desktop-menu .reserve-now-banner {
     right: 15px;
     top: 0;
-    width: 85px;
+    width: 95px;
     padding: 20px 0;
   }
   header .cat-logo {
@@ -1053,6 +1057,32 @@ button {
   }
   footer .company-info img {
     width: 85px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  header h1 {
+    margin-left: 6.8vw;
+    font-size: clamp(2rem, 2vw, 3rem);
+  }
+  header #mobile-menu-icon {
+    display: none;
+  }
+  header #desktop-menu {
+    font-size: clamp(1.25rem, 1.2vw, 1.8rem);
+  }
+  header #desktop-menu ul > li {
+    margin-right: clamp(50px, 4vw, 90px);
+  }
+  header #desktop-menu .reserve-now-banner {
+    right: 3%;
+    top: 0;
+    width: clamp(95px, 7vw, 160px);
+    padding: 30px 0;
+  }
+  header .cat-logo {
+    bottom: -16px;
+    left: 15px;
+    width: 60px;
   }
 }
 
