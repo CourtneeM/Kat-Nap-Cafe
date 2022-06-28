@@ -983,7 +983,7 @@ button {
 }
 @media only screen and (min-width: 1440px) {
   #features {
-    max-width: 1200px;
+    max-width: 1440px;
     margin-bottom: 200px;
 
     h2 {
@@ -991,7 +991,7 @@ button {
       font-size: clamp(2.25rem, 2.4vw, 3.2rem);
     }
 
-    .feature-container { max-width: 350px; }
+    .feature-container { max-width: 375px; }
 
     .feature-graphic-container {
       height: 150px;
@@ -1139,6 +1139,7 @@ button {
 }
 @media only screen and (min-width: 2560px) {
   #meet-cats {
+    gap: 10%;
     margin-bottom: 200px;
 
     h2 {
@@ -1298,11 +1299,19 @@ button {
 }
 @media only screen and (min-width: 1440px) {
   #events {
+    max-width: 1440px;
     margin-bottom: 200px;
     
     h2 {
       margin-bottom: 100px;
       font-size: clamp(2.25rem, 2.4vw, 3.2rem);
+    }
+
+    .event-container {
+      width: 375px;
+      .event-description {
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -1562,7 +1571,7 @@ button {
 @media only screen and (min-width: 1440px) {
   #testimonials {
     gap: 50px;
-    max-width: 1200px;
+    max-width: 1440px;
     margin-bottom: 200px;
     
     h2 {
@@ -1571,7 +1580,7 @@ button {
     }
 
     .testimonial {
-      max-width: 300px;
+      max-width: 375px;
     }
     
     .author-info {
@@ -1706,7 +1715,7 @@ button {
     }
 
     #reservation-options > .reservation-option {
-      width: 460px;
+      width: 25%;
       height: 100%;
 
       p:first-child {

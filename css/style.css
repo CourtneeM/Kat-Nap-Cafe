@@ -862,7 +862,7 @@ button {
 }
 @media only screen and (min-width: 1440px) {
   #features {
-    max-width: 1200px;
+    max-width: 1440px;
     margin-bottom: 200px;
   }
   #features h2 {
@@ -870,7 +870,7 @@ button {
     font-size: clamp(2.25rem, 2.4vw, 3.2rem);
   }
   #features .feature-container {
-    max-width: 350px;
+    max-width: 375px;
   }
   #features .feature-graphic-container {
     height: 150px;
@@ -1004,6 +1004,7 @@ button {
 }
 @media only screen and (min-width: 2560px) {
   #meet-cats {
+    gap: 10%;
     margin-bottom: 200px;
   }
   #meet-cats h2 {
@@ -1150,11 +1151,18 @@ button {
 }
 @media only screen and (min-width: 1440px) {
   #events {
+    max-width: 1440px;
     margin-bottom: 200px;
   }
   #events h2 {
     margin-bottom: 100px;
     font-size: clamp(2.25rem, 2.4vw, 3.2rem);
+  }
+  #events .event-container {
+    width: 375px;
+  }
+  #events .event-container .event-description {
+    margin: 0 auto;
   }
 }
 @media only screen and (min-width: 0) {
@@ -1389,7 +1397,7 @@ button {
 @media only screen and (min-width: 1440px) {
   #testimonials {
     gap: 50px;
-    max-width: 1200px;
+    max-width: 1440px;
     margin-bottom: 200px;
   }
   #testimonials h2 {
@@ -1397,7 +1405,7 @@ button {
     font-size: clamp(2.25rem, 2.4vw, 3.2rem);
   }
   #testimonials .testimonial {
-    max-width: 300px;
+    max-width: 375px;
   }
   #testimonials .author-info p {
     font-size: clamp(1.5rem, 1.2vw, 1.6rem);
@@ -1512,7 +1520,7 @@ button {
     font-size: clamp(2.25rem, 2.4vw, 3.2rem);
   }
   #reserve-now #reservation-options > .reservation-option {
-    width: 460px;
+    width: 25%;
     height: 100%;
   }
   #reserve-now #reservation-options > .reservation-option p:first-child {
