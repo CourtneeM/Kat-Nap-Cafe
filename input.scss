@@ -34,7 +34,8 @@ button {
   color: #fff;
   background-color: $secondary;
   border: none;
-  border-radius: 20px;
+  border-radius: 24px;
+  cursor: pointer;
   @include box-shadow-default();
 }
 
@@ -759,11 +760,20 @@ button {
 }
 @media only screen and (min-width: 1440px) {
   #hero {
+    background-color: #5b5c88;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234f517d' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+    
+    .overlay {
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 2260px;
+    }
+
     img {
-      width: 110%;
+      width: 100%;
       max-height: 1400px;
       display: block;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 }
@@ -809,13 +819,14 @@ button {
     
     button {
       font-size: clamp(0.75rem, 2vw, 0.9rem);
-      padding: 13px 15px;
+      padding: 10px 20px;
     }
   }
 }
 @media only screen and (min-width: 860px) {
   #welcome-cta {
-    margin-bottom: 15.8vw;
+    margin-bottom: 150px;
+    padding: 5vw;
 
     h2 {
       margin-bottom: 1.25rem;
@@ -826,20 +837,22 @@ button {
       font-size: clamp(0.9rem, 1.4vw, 1.2rem);
     }
     
-    button { font-size: clamp(0.9rem, 1.4vw, 1.2rem); }
+    button {
+      padding: 12px 24px;
+      font-size: clamp(0.9rem, 1.4vw, 1.2rem);
+    }
   }
 }
 @media only screen and (min-width: 1440px) {
   #welcome-cta {
-    h2 {
-      font-size: clamp(3rem, 3vw, 4rem);
-    }
+    margin-bottom: 200px;
+    padding: 70px 0;
 
-    p {
-      font-size: clamp(1.2rem, 1.2vw, 1.6rem);
-    }
+    h2 { font-size: clamp(3rem, 3vw, 4rem); }
+    p { font-size: clamp(1.2rem, 1.2vw, 1.6rem); }
     
     button {
+      padding: 16px 40px;
       font-size: clamp(1.2rem, 1.2vw, 1.6rem);
     }
   }
@@ -947,7 +960,7 @@ button {
 @media only screen and (min-width: 860px) {
   #features {
     max-width: 1000px;
-    margin-bottom: 12.5rem;
+    margin-bottom: 150px;
 
     h2 { font-size: clamp(2rem, 3vw, 2.25rem); }
     .feature-container { max-width: 250px; }
@@ -964,7 +977,12 @@ button {
 }
 @media only screen and (min-width: 1440px) {
   #features {
-    h2 { font-size: clamp(2.25rem, 2.4vw, 3.2rem); }
+    margin-bottom: 200px;
+
+    h2 {
+      margin-bottom: 100px;
+      font-size: clamp(2.25rem, 2.4vw, 3.2rem);
+    }
     .feature-text-container { font-size: clamp(1.2rem, 1.2vw, 1.6rem); }
   }
 }
@@ -1077,6 +1095,8 @@ button {
 }
 @media only screen and (min-width: 1440px) {
   #meet-cats {
+    margin-bottom: 150px;
+
     h2 { font-size: clamp(2.25rem, 2.4vw, 3.2rem); }
 
     .img-container {
@@ -1097,6 +1117,11 @@ button {
 
 @media only screen and (min-width: 2560px) {
   #meet-cats {
+    margin-bottom: 200px;
+
+    h2 {
+      margin-bottom: 100px;
+    }
     .name-container {
       width: 270px;
       font-size: 2rem;
@@ -1207,7 +1232,7 @@ button {
 @media only screen and (min-width: 860px) {
   #events {
     max-width: 1000px;
-    margin-bottom: 12.5rem;
+    margin-bottom: 150px;
     
     h2 { font-size: clamp(2rem, 3vw, 2.25rem); }
 
@@ -1253,7 +1278,12 @@ button {
 }
 @media only screen and (min-width: 1440px) {
   #events {
-    h2 { font-size: clamp(2.25rem, 2.4vw, 3.2rem); }
+    margin-bottom: 200px;
+    
+    h2 {
+      margin-bottom: 100px;
+      font-size: clamp(2.25rem, 2.4vw, 3.2rem);
+    }
   }
 }
 
@@ -1318,7 +1348,7 @@ button {
 }
 @media only screen and (min-width: 860px) {
   #gallery {
-    margin-bottom: 12.5rem;
+    margin-bottom: 150px;
     h2 { font-size: clamp(2rem, 3vw, 2.25rem); }
 
     .gallery-container { max-width: 1000px; }
@@ -1326,14 +1356,14 @@ button {
 }
 @media only screen and (min-width: 1440px) {
   #gallery {
-    h2 { font-size: clamp(2.25rem, 2.4vw, 3.2rem); }
+    margin-bottom: 200px;
+    
+    h2 {
+      margin-bottom: 100px;
+      font-size: clamp(2.25rem, 2.4vw, 3.2rem);
+    }
 
     .gallery-container { max-width: 1440px; }
-  }
-}
-
-@media only screen and (min-width: 2560px) {
-  #gallery {
   }
 }
 
@@ -1475,7 +1505,7 @@ button {
 }
 @media only screen and (min-width: 860px) {
   #testimonials {
-    margin-bottom: 12.5rem;
+    margin-bottom: 150px;
     max-width: 1000px;
     h2 { font-size: clamp(2rem, 3vw, 2.25rem); }
 
@@ -1511,7 +1541,12 @@ button {
 }
 @media only screen and (min-width: 1440px) {
   #testimonials {
-    h2 { font-size: clamp(2.25rem, 2.4vw, 3.2rem); }
+    margin-bottom: 200px;
+    
+    h2 {
+      margin-bottom: 100px;
+      font-size: clamp(2.25rem, 2.4vw, 3.2rem);
+    }
     
     .author-info {
       p {
@@ -1597,7 +1632,8 @@ button {
         button {
           align-self: flex-start;
           margin-top: auto;
-          padding: 10px 28px;
+          padding: 14px 30px;
+          font-size: clamp(0.9rem, 2.2vw, 1rem);
         }
       }
 
@@ -1607,7 +1643,7 @@ button {
 }
 @media only screen and (min-width: 860px) {
   #reserve-now {
-    margin-bottom: 12.5rem;
+    margin-bottom: 150px;
     padding-top: 80px;
     padding-bottom: 136px;
     
@@ -1617,18 +1653,25 @@ button {
       width: 280px;
       height: 280px;
 
-      &:nth-child(2), &:nth-child(3) {
-        p:first-child { margin-bottom: 22px; }
-        p:nth-child(2) { margin-bottom: 70px; }
+      p:first-child { margin-bottom: 22px; }
+      p:nth-child(2) { margin-bottom: 70px; }
+
+      button {
+        padding: 16px 36px;
       }
     }
+
   }
 }
 @media only screen and (min-width: 1440px) {
   #reserve-now {
     max-width: 1440px;
+    margin-bottom: 200px;
 
-    h2 { font-size: clamp(2.25rem, 2.4vw, 3.2rem); }
+    h2 {
+      margin-bottom: 100px;
+      font-size: clamp(2.25rem, 2.4vw, 3.2rem);
+    }
 
     .reservation-option {
       width: 350px;
@@ -1638,10 +1681,10 @@ button {
         width: 80%;
         font-size: clamp(1.2rem, 1.3vw, 2rem);
       }
-      p:nth-child(2) { font-size: clamp(1.2rem, 1.2vw, 1.6rem); }
+      p:nth-child(2) { font-size: clamp(1rem, 1.2vw, 1.6rem); }
 
       button {
-        font-size: clamp(1.2rem, 1.2vw, 1.6rem);
+        font-size: clamp(1rem, 1.2vw, 1.6rem);
       }
     }
   }
@@ -1720,15 +1763,14 @@ button {
       button {
         width: 40%;
         margin: 0 auto;
-        padding: 10px 48px;
-        font-size: 0.9rem;
+        padding: 10px 20px;
       }
     }
   }
 }
 @media only screen and (min-width: 860px) {
   #contact-us {
-    margin-bottom: 12.5rem;
+    margin-bottom: 150px;
     width: 423px;
 
     h2 { font-size: clamp(2rem, 3vw, 2.25rem); }
@@ -1745,7 +1787,7 @@ button {
       button {
         width: 40%;
         margin: 0 auto;
-        padding: 12px 48px;
+        padding: 12px 24px;
         font-size: clamp(0.9rem, 1.6vw, 1.2rem);
       }
     }
@@ -1753,13 +1795,20 @@ button {
 }
 @media only screen and (min-width: 1440px) {
   #contact-us {
-    h2 { font-size: clamp(2.25rem, 2.4vw, 3.2rem); }
+    margin-bottom: 200px;
+
+    h2 {
+      margin-bottom: 100px;
+      font-size: clamp(2.25rem, 2.4vw, 3.2rem);
+    }
+
     form {
       div {
         label, input, textarea { font-size: clamp(1.2rem, 1.2vw, 1.6rem); }
       }
 
       button {
+        padding: 12px 40px;
         font-size: clamp(1.2rem, 1.2vw, 1.6rem);
       }
     }
@@ -1771,7 +1820,7 @@ button {
 // ************
 @media only screen and (min-width: 0) {
   footer {
-    padding: 63px 0;
+    padding: 65px 0;
     text-align: center;
     color: #fff;
     background-color: $primary;
@@ -1889,8 +1938,7 @@ button {
 }
 @media only screen and (min-width: 860px) {
   footer {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding: 80px 10vw;
 
     #newsletter {
       width: 400px;
@@ -1923,6 +1971,8 @@ button {
 }
 @media only screen and (min-width: 1440px) {
   footer {
+    padding: 100px 15vw;
+
     #newsletter {
       h3 { font-size: clamp(1.2rem, 1.3vw, 1.8rem); }
       
