@@ -1388,11 +1388,16 @@ button {
 }
 @media only screen and (min-width: 1440px) {
   #testimonials {
+    gap: 50px;
+    max-width: 1200px;
     margin-bottom: 200px;
   }
   #testimonials h2 {
     margin-bottom: 100px;
     font-size: clamp(2.25rem, 2.4vw, 3.2rem);
+  }
+  #testimonials .testimonial {
+    max-width: 300px;
   }
   #testimonials .author-info p {
     font-size: clamp(1.5rem, 1.2vw, 1.6rem);
@@ -1400,10 +1405,6 @@ button {
 }
 @media only screen and (min-width: 0) {
   #reserve-now {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8vw;
     margin: 0 auto 6rem;
     padding: 65px 8vw;
     color: #fff;
@@ -1419,25 +1420,32 @@ button {
     font-size: clamp(1.5rem, 4.8vw, 1.75rem);
     text-align: center;
   }
-  #reserve-now .reservation-option {
+  #reserve-now #reservation-options {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8vw;
+    margin: 0 auto;
+  }
+  #reserve-now #reservation-options .reservation-option {
     position: relative;
     z-index: 1;
     width: 230px;
     margin: 0 auto;
   }
-  #reserve-now .reservation-option:nth-child(2) {
+  #reserve-now #reservation-options .reservation-option:nth-child(2) {
     margin-bottom: 75px;
   }
-  #reserve-now .reservation-option p:first-child {
+  #reserve-now #reservation-options .reservation-option p:first-child {
     margin-bottom: 24px;
     font-size: clamp(1rem, 3vw, 1.2rem);
     font-weight: 600;
   }
-  #reserve-now .reservation-option p:nth-child(2) {
+  #reserve-now #reservation-options .reservation-option p:nth-child(2) {
     margin-bottom: 36px;
     font-size: clamp(0.75rem, 2.6vw, 0.9rem);
   }
-  #reserve-now .reservation-option button {
+  #reserve-now #reservation-options .reservation-option button {
     padding: 10px 24px;
     font-size: clamp(0.75rem, 2.6vw, 0.9rem);
   }
@@ -1454,14 +1462,14 @@ button {
     font-size: clamp(1.75rem, 3.8vw, 2rem);
   }
   #reserve-now .reservation-option {
-    height: 255px;
+    height: 260px;
   }
-  #reserve-now .reservation-option:nth-child(2), #reserve-now .reservation-option:nth-child(3) {
+  #reserve-now .reservation-option div {
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
   }
-  #reserve-now .reservation-option:nth-child(2) button, #reserve-now .reservation-option:nth-child(3) button {
+  #reserve-now .reservation-option div button {
     align-self: flex-start;
     margin-top: auto;
     padding: 14px 30px;
@@ -1480,41 +1488,43 @@ button {
   #reserve-now h2 {
     font-size: clamp(2rem, 3vw, 2.25rem);
   }
-  #reserve-now .reservation-option {
+  #reserve-now #reservation-options > .reservation-option {
     width: 280px;
     height: 280px;
   }
-  #reserve-now .reservation-option p:first-child {
+  #reserve-now #reservation-options > .reservation-option p:first-child {
     margin-bottom: 22px;
+    min-height: 56px;
   }
-  #reserve-now .reservation-option p:nth-child(2) {
+  #reserve-now #reservation-options > .reservation-option p:nth-child(2) {
     margin-bottom: 70px;
   }
-  #reserve-now .reservation-option button {
+  #reserve-now #reservation-options > .reservation-option button {
     padding: 16px 36px;
   }
 }
 @media only screen and (min-width: 1440px) {
   #reserve-now {
-    max-width: 1440px;
     margin-bottom: 200px;
   }
   #reserve-now h2 {
     margin-bottom: 100px;
     font-size: clamp(2.25rem, 2.4vw, 3.2rem);
   }
-  #reserve-now .reservation-option {
-    width: 350px;
+  #reserve-now #reservation-options > .reservation-option {
+    width: 460px;
     height: 100%;
   }
-  #reserve-now .reservation-option p:first-child {
+  #reserve-now #reservation-options > .reservation-option p:first-child {
     width: 80%;
     font-size: clamp(1.2rem, 1.3vw, 2rem);
   }
-  #reserve-now .reservation-option p:nth-child(2) {
+  #reserve-now #reservation-options > .reservation-option p:nth-child(2) {
     font-size: clamp(1rem, 1.2vw, 1.6rem);
   }
-  #reserve-now .reservation-option button {
+  #reserve-now #reservation-options > .reservation-option button {
+    padding-left: 42px;
+    padding-right: 42px;
     font-size: clamp(1rem, 1.2vw, 1.6rem);
   }
 }
@@ -1584,7 +1594,7 @@ button {
 @media only screen and (min-width: 860px) {
   #contact-us {
     margin-bottom: 150px;
-    width: 423px;
+    width: 440px;
   }
   #contact-us h2 {
     font-size: clamp(2rem, 3vw, 2.25rem);
@@ -1596,7 +1606,7 @@ button {
     font-size: clamp(0.9rem, 1.6vw, 1.2rem);
   }
   #contact-us form div:nth-child(2n+1) {
-    margin-right: 63px;
+    margin-right: 30px;
   }
   #contact-us form div:nth-last-child(2) {
     margin-right: 0;
@@ -1610,11 +1620,15 @@ button {
 }
 @media only screen and (min-width: 1440px) {
   #contact-us {
+    width: 600px;
     margin-bottom: 200px;
   }
   #contact-us h2 {
     margin-bottom: 100px;
     font-size: clamp(2.25rem, 2.4vw, 3.2rem);
+  }
+  #contact-us form div {
+    margin-bottom: 20px;
   }
   #contact-us form div label, #contact-us form div input, #contact-us form div textarea {
     font-size: clamp(1.2rem, 1.2vw, 1.6rem);
