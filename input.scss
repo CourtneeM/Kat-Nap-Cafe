@@ -402,8 +402,9 @@ button {
 
     .feature-text-container {
       max-width: 250px;
+      min-height: 100px;
       margin: 0 auto;
-      padding: 10vw 25px 5vw;
+      padding: 45px 25px 25px;
       font-size: 0.75rem;
       color: #fff;
     }
@@ -452,8 +453,7 @@ button {
     }
 
     .feature-text-container {
-      padding-top: 12vw;
-      padding-bottom: 4vw;
+      padding: 90px 30px 35px;
       font-size: clamp(0.75rem, 2vw, 0.9rem);
     }
   }
