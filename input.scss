@@ -1328,8 +1328,9 @@ button {
       div {
         flex: 1 1 45%;
 
+        label, input, textarea { font-size: clamp(0.9rem, 2.2vw, 1rem); }
+        
         &:nth-child(2n+1) { margin-right: 20px; }
-
         &:nth-last-child(2) {
           flex: 1 1 100%;
           margin-right: 0;
@@ -1341,6 +1342,7 @@ button {
         width: 40%;
         margin: 0 auto;
         padding: 10px 20px;
+        font-size: clamp(0.9rem, 2.2vw, 1rem);
       }
     }
   }
@@ -1355,8 +1357,7 @@ button {
     form {
       div {
         flex-basis: 35%;
-
-        label, input, textarea { font-size: clamp(0.9rem, 1.6vw, 1.2rem); }
+        
         &:nth-child(2n+1) { margin-right: 30px; }
         &:nth-last-child(2) { margin-right: 0; }
       }
@@ -1365,7 +1366,6 @@ button {
         width: 40%;
         margin: 0 auto;
         padding: 12px 24px;
-        font-size: clamp(0.9rem, 1.6vw, 1.2rem);
       }
     }
   }

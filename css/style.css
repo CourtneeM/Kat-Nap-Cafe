@@ -1184,6 +1184,9 @@ button {
   #contact-us form div {
     flex: 1 1 45%;
   }
+  #contact-us form div label, #contact-us form div input, #contact-us form div textarea {
+    font-size: clamp(0.9rem, 2.2vw, 1rem);
+  }
   #contact-us form div:nth-child(2n+1) {
     margin-right: 20px;
   }
@@ -1196,6 +1199,7 @@ button {
     width: 40%;
     margin: 0 auto;
     padding: 10px 20px;
+    font-size: clamp(0.9rem, 2.2vw, 1rem);
   }
 }
 @media only screen and (min-width: 860px) {
@@ -1209,9 +1213,6 @@ button {
   #contact-us form div {
     flex-basis: 35%;
   }
-  #contact-us form div label, #contact-us form div input, #contact-us form div textarea {
-    font-size: clamp(0.9rem, 1.6vw, 1.2rem);
-  }
   #contact-us form div:nth-child(2n+1) {
     margin-right: 30px;
   }
@@ -1222,7 +1223,6 @@ button {
     width: 40%;
     margin: 0 auto;
     padding: 12px 24px;
-    font-size: clamp(0.9rem, 1.6vw, 1.2rem);
   }
 }
 @media only screen and (min-width: 1440px) {
