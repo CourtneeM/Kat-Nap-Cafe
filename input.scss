@@ -951,6 +951,7 @@ button {
 
     .testimonial {
       max-width: 250px;
+      min-height: 280px;
       margin: 0 auto;
 
       &:nth-child(3), &:nth-child(4) {
@@ -1035,6 +1036,7 @@ button {
     }
 
     .testimonial {
+      min-height: 390px;
       padding: 30px 27px 5px;
       border-radius: 5px;
       @include box-shadow-default();
