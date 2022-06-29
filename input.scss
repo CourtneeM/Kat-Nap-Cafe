@@ -44,6 +44,26 @@ a {
   text-decoration: none;
 }
 
+#back-to-top {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 99;
+  width: clamp(32px, 3.4vw, 55px);
+  height: clamp(32px, 3.4vw, 55px);
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background-color: $primary;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    @include box-shadow-default();
+  }
+}
+
 .hidden { display: none; }
 
 
