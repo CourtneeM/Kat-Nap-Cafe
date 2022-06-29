@@ -1057,15 +1057,10 @@ button {
 
     .testimonial-progress {
       bottom: -50px;
-      width: 40px;
 
       div {
         width: 10px;
         height: 10px;
-      }
-
-      div:nth-child(3) {
-        display: none;
       }
     }
   }

@@ -10,13 +10,39 @@
 })();
 
 (function testimonialSlidesListener() {
-  const testimonials = [...document.querySelectorAll('.testimonial')];
+  const testimonialsContainer = document.querySelector('#testimonials');
+  const testimonials = [...testimonialsContainer.querySelectorAll('.testimonial')];
   const [prevControl, nextControl] = [...document.querySelector('#testimonial-controls').children];
   const progressCircles = [...document.querySelector('.testimonial-progress').children];
-  let index = 0;
+  
+  if (window.matchMedia('(min-width:640px)')) {
+    let indices = [0, 1];
+    let activeTestimonials = [testimonials[indices[0]], testimonials[indices[1]]];
 
-  prevControl.addEventListener('click', () => {
-    if (window.matchMedia('(min-width:0px)')) {
+    nextControl.addEventListener('click', (e) => {
+      progressCircles[indices[0]].removeAttribute('id');
+
+      indices[0] = testimonials[indices[0]+1] === undefined ? 0 : indices[0] + 1;
+      indices[1] = testimonials[indices[1]+1] === undefined ? 0 : indices[1] + 1;
+
+      activeTestimonials = [testimonials[indices[0]], testimonials[indices[1]]];
+
+      testimonials.forEach((testimonial) => {
+        if ([...testimonialsContainer.children].includes(testimonial)) {
+          testimonialsContainer.removeChild(testimonial);
+        }
+      });
+
+
+      activeTestimonials.forEach((testimonial) => {
+        testimonialsContainer.insertBefore(testimonial, prevControl.parentElement);
+      });
+      progressCircles[indices[0]].id = 'active-testimonial';
+    });
+  } else if (window.matchMedia('(min-width:0px)')) {
+    let index = 0;
+
+    prevControl.addEventListener('click', () => {
       testimonials[index].style.display = 'none';
       progressCircles[index].removeAttribute('id');
       
@@ -24,16 +50,9 @@
       
       testimonials[index].style.display = 'block';
       progressCircles[index].id = 'active-testimonial';
+    });
 
-    } else if (window.matchMedia('(min-width:640px)')) {
-
-    } else if (window.matchMedia('(min-width:860px;)')) {
-      
-    }
-  });
-
-  nextControl.addEventListener('click', (e) => {
-    if (window.matchMedia('(min-width:0px)')) {
+    nextControl.addEventListener('click', (e) => {
       testimonials[index].style.display = 'none';
       progressCircles[index].removeAttribute('id');
 
@@ -41,10 +60,6 @@
       
       testimonials[index].style.display = 'block';
       progressCircles[index].id = 'active-testimonial';
-    } else if (window.matchMedia('(min-width:640px)')) {
-      
-    } else if (window.matchMedia('(min-width:860px)')) [
-
-    ]
-  });
+    });
+  }
 })();

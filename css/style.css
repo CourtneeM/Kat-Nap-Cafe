@@ -951,14 +951,10 @@ button {
   }
   #testimonials .testimonial-progress {
     bottom: -50px;
-    width: 40px;
   }
   #testimonials .testimonial-progress div {
     width: 10px;
     height: 10px;
-  }
-  #testimonials .testimonial-progress div:nth-child(3) {
-    display: none;
   }
 }
 @media only screen and (min-width: 860px) {
