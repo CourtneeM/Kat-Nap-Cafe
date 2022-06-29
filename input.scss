@@ -39,6 +39,8 @@ button {
   @include box-shadow-default();
 }
 
+.hidden { display: none; }
+
 
 // ************
 //   HEADER
@@ -72,10 +74,10 @@ button {
     }
 
     #mobile-menu {
-      display: none;
       position: absolute;
       top: 0;
       right: 0;
+      z-index: 1;
       font-size: 0.75rem;
       background: $primary;
       border-left: 2px solid #fff;
@@ -148,6 +150,8 @@ button {
       left: 10px;
       width: 40px;
     }
+
+    #mobile-menu { display: none; }
   }
 }
 @media only screen and (min-width: 860px) {
@@ -156,6 +160,7 @@ button {
       margin-left: 6.8vw;
       font-size: 1.9rem;
     }
+    #mobile-menu { display: none; }
     #mobile-menu-icon { display: none; }
     #desktop-menu {
       font-size: clamp(0.9rem, 2vw, 1.25rem);
@@ -187,6 +192,8 @@ button {
       margin-left: 6.8vw;
       font-size: clamp(2rem, 2vw, 3rem);
     }
+    
+    #mobile-menu { display: none; }
     #mobile-menu-icon { display: none; }
     #desktop-menu {
       font-size: clamp(1.25rem, 1.2vw, 1.8rem);
