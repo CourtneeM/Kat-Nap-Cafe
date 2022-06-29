@@ -1033,7 +1033,7 @@ button {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    gap: 8vw;
+    gap: 12vw;
     margin: 0 auto;
   }
   #reserve-now #reservation-options .reservation-option {
@@ -1041,9 +1041,6 @@ button {
     z-index: 1;
     width: 230px;
     margin: 0 auto;
-  }
-  #reserve-now #reservation-options .reservation-option:nth-child(2) {
-    margin-bottom: 75px;
   }
   #reserve-now #reservation-options .reservation-option p:first-child {
     margin-bottom: 24px;
@@ -1070,21 +1067,21 @@ button {
     margin-bottom: 60px;
     font-size: clamp(1.75rem, 3.8vw, 2rem);
   }
-  #reserve-now .reservation-option {
-    height: 260px;
+  #reserve-now #reservation-options {
+    gap: 8vw;
   }
-  #reserve-now .reservation-option div {
+  #reserve-now #reservation-options .reservation-option div {
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
   }
-  #reserve-now .reservation-option div button {
+  #reserve-now #reservation-options .reservation-option div button {
     align-self: flex-start;
     margin-top: auto;
     padding: 14px 30px;
     font-size: clamp(0.9rem, 2.2vw, 1rem);
   }
-  #reserve-now .reservation-option p:nth-child(2) {
+  #reserve-now #reservation-options .reservation-option p:nth-child(2) {
     font-size: clamp(0.9rem, 2.2vw, 1rem);
   }
 }
@@ -1101,13 +1098,13 @@ button {
   }
   #reserve-now #reservation-options > .reservation-option p:first-child {
     margin-bottom: 22px;
-    min-height: 56px;
+    min-height: 74px;
   }
   #reserve-now #reservation-options > .reservation-option p:nth-child(2) {
     margin-bottom: 70px;
   }
   #reserve-now #reservation-options > .reservation-option button {
-    padding: 16px 36px;
+    padding: 12px 36px;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -1134,8 +1131,7 @@ button {
     font-size: clamp(1rem, 1.2vw, 1.6rem);
   }
   #reserve-now #reservation-options > .reservation-option button {
-    padding-left: 42px;
-    padding-right: 42px;
+    width: 60%;
     font-size: clamp(1rem, 1.2vw, 1.6rem);
   }
 }

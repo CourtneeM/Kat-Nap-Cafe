@@ -1149,7 +1149,7 @@ button {
       position: relative;
       display: flex;
       flex-wrap: wrap;
-      gap: 8vw;
+      gap: 12vw;
       margin: 0 auto;
 
       .reservation-option {
@@ -1158,10 +1158,6 @@ button {
         width: 230px;
         margin: 0 auto;
 
-        &:nth-child(2) {
-          margin-bottom: 75px;
-        }
-          
         p:first-child {
           margin-bottom: 24px;
           font-size: clamp(1rem, 3vw, 1.2rem);
@@ -1193,23 +1189,25 @@ button {
       font-size: clamp(1.75rem, 3.8vw, 2rem);
     }
 
-    .reservation-option {
-      height: 260px;
+    #reservation-options {
+      gap:8vw;
 
-      div {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 0;
-  
-        button {
-          align-self: flex-start;
-          margin-top: auto;
-          padding: 14px 30px;
-          font-size: clamp(0.9rem, 2.2vw, 1rem);
+      .reservation-option {
+        div {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 0;
+    
+          button {
+            align-self: flex-start;
+            margin-top: auto;
+            padding: 14px 30px;
+            font-size: clamp(0.9rem, 2.2vw, 1rem);
+          }
         }
-      }
 
-      p:nth-child(2) { font-size: clamp(0.9rem, 2.2vw, 1rem); }
+        p:nth-child(2) { font-size: clamp(0.9rem, 2.2vw, 1rem); }
+      }
     }
   }
 }
@@ -1225,12 +1223,12 @@ button {
 
       p:first-child {
         margin-bottom: 22px;
-        min-height: 56px;
+        min-height: 74px;
       }
       p:nth-child(2) { margin-bottom: 70px; }
 
       button {
-        padding: 16px 36px;
+        padding: 12px 36px;
       }
     }
 
@@ -1262,8 +1260,7 @@ button {
       }
 
       button {
-        padding-left: 42px;
-        padding-right: 42px;
+        width: 60%;
         font-size: clamp(1rem, 1.2vw, 1.6rem);
       }
     }
